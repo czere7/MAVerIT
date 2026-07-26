@@ -9,7 +9,7 @@ from utils import (
     get_nearby_test_examples,
     get_relevant_source_files,
     load_prompt,
-    strip_markdown_code_fence, print_log,
+    strip_markdown_code_fence, write_log, strip_comments_for_long_prompt,
 )
 
 if TYPE_CHECKING:
@@ -30,13 +30,14 @@ def test_repair_node(agent_state: "AgentState") -> dict[str, str]:
     if not repaired_test_class:
         raise RuntimeError("Test repair model returned an empty response.")
 
-    print_log(f"[test_repair_node] Produced repaired test class with {len(repaired_test_class.splitlines())} line(s).", response.usage_metadata, agent_state)
+    write_log(f"[test_repair_node] Produced repaired test class with {len(repaired_test_class.splitlines())} line(s).", response.usage_metadata, agent_state)
 
     return {
         "test_class": repaired_test_class,
         "repair_attempts": agent_state.get("repair_attempts", 0) + 1,
         "input_tokens": input_tokens + agent_state.get('input_tokens'),
         "output_tokens": output_tokens + agent_state.get('output_tokens'),
+        "total_tokens": input_tokens + output_tokens + agent_state.get('total_tokens', 0),
     }
 
 
@@ -54,15 +55,15 @@ def _build_prompt(agent_state: "AgentState") -> str:
     nearby_test_examples = get_nearby_test_examples(agent_state)
     prompt_template = load_prompt("test_repair_prompt.md")
 
-    return prompt_template.format(
+    return strip_comments_for_long_prompt(prompt_template.format(
         class_path=class_under_test.file_path,
         compiler_feedback=compiler_feedback,
         test_class=test_class,
         last_compilable_test_class=_format_last_compilable_test_class(agent_state),
         class_under_test=class_under_test.file_content,
         relevant_source_files=format_source_files_for_prompt(relevant_source_files),
-        nearby_test_examples=format_test_examples_for_prompt(nearby_test_examples),
-    )
+        # nearby_test_examples=format_test_examples_for_prompt(nearby_test_examples),
+    ))
 
 
 def _format_last_compilable_test_class(agent_state: "AgentState") -> str:

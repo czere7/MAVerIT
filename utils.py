@@ -1,15 +1,18 @@
+import json
 import shutil
 import re
 import subprocess
+import uuid
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Mapping, TypedDict, List
 import xml.etree.ElementTree as ET
+
+from tree_sitter import Language, Parser, Query, QueryCursor
+import tree_sitter_java as tsjava
 
 from dotenv import dotenv_values
 from langchain_core.messages import UsageMetadata
-
-from AgentState import AgentState
 
 config = dotenv_values(".env")
 
@@ -36,10 +39,47 @@ class SourceCodeFileData:
     file_path: str
     file_content: str
 
-def print_log(prefix: str, usage_metadata: UsageMetadata, agent_state: AgentState):
-    print(f"{prefix}\n"
-          f"\tinput tokens: {usage_metadata.get('input_tokens')}, {agent_state.get('input_tokens')}\n"
-          f"\toutput tokens: {usage_metadata.get('output_tokens')}, {agent_state.get('output_tokens')}\n")
+def write_log(prefix: str, usage_metadata: UsageMetadata, agent_state: TypedDict):
+    # tokens
+    i_tokens = usage_metadata.get('input_tokens')
+    o_tokens = usage_metadata.get('output_tokens')
+    t_tokens = usage_metadata.get('total_tokens')
+    content = (f"{prefix}\n" +
+               f"\tinput tokens: {i_tokens}, {i_tokens + agent_state.get('input_tokens', 0)}\n" +
+               f"\toutput tokens: {o_tokens}, {o_tokens + agent_state.get('output_tokens', 0)}\n"
+               f"\ttotal tokens: {t_tokens}, {t_tokens + agent_state.get('total_tokens', 0)}\n")
+    write_to_log_file(content, agent_state['run_id'])
+
+def write_compiler_log(compile_passed: bool, agent_state: TypedDict):
+    if not compile_passed:
+        content = "[compiler_node] Compilation failed.\n"
+        write_to_log_file(content, agent_state.get("run_id"))
+        return
+    # common
+    class_under_test = get_current_class_under_test(agent_state)
+    module_dir = get_maven_module_directory(class_under_test.file_path, get_working_directory())
+    # mutation score
+    run_pitest(
+        str(module_dir),
+        get_java_fully_qualified_name(class_under_test.file_content),
+        get_java_fully_qualified_name(agent_state.get("test_class", ""))
+    )
+    mutation_score = calculate_mutation_score(find_pitest_xml_reports(module_dir))
+    # coverage
+    run_jacoco(str(module_dir))
+    target_class = get_java_fully_qualified_name(class_under_test.file_content)
+    coverage = calculate_branch_coverage_for_class(find_jacoco_xml_reports(module_dir), target_class)
+    content = (f"[compiler_node] Compilation passed.\n"
+               f"\tmutation score: {mutation_score}\n"
+               f"\tcoverage: {coverage}\n")
+    write_to_log_file(content, agent_state.get("run_id"))
+
+def write_to_log_file(content:str, run_id: str):
+    print(content, end="")
+    log_path = Path().resolve() / f"{run_id}" / "log.txt"
+    ensure_file(log_path)
+    with log_path.open("a", encoding="utf-8") as file:
+        file.write(content)
 
 def is_concrete_class(java_code: str) -> bool:
     class_pattern = re.compile(
@@ -49,24 +89,37 @@ def is_concrete_class(java_code: str) -> bool:
         r'class\s+\w+',
         re.MULTILINE
     )
-    if re.search(r'\b(enum|interface)\s+\w+', java_code):
-        return False
+    # if re.search(r'\b(enum|interface)\s+\w+', java_code):
+    #     return False
     return bool(class_pattern.search(java_code))
 
-def persist_current_class_index(index: int):
+def persist_checkpoint(agent_state: TypedDict, next_index: int):
     tmp_file_location = str(config.get("CLASS_INDEX_TMP_FILE", "tmp.txt"))
+    state = {
+        "class_index": next_index,
+        "run_id": agent_state['run_id'],
+        "input_tokens": agent_state['input_tokens'],
+        "output_tokens": agent_state['output_tokens'],
+        "total_tokens": agent_state['total_tokens'],
+    }
     with open(tmp_file_location, "w", encoding="UTF-8") as file:
-        file.write(str(index))
+        file.write(json.dumps(state))
 
-def retrieve_current_class_index() -> int:
+def retrieve_checkpoint() -> dict:
     tmp_file_location = str(config.get("CLASS_INDEX_TMP_FILE", "tmp.txt"))
     if Path(tmp_file_location).is_file():
         with open(tmp_file_location, "r", encoding="UTF-8") as file:
-            return int(file.read())
-    return 0
+            return json.loads(file.read())
+    return {
+        "class_index": 0,
+        "run_id": str(uuid.uuid4()),
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+    }
 
 def run_maven(project_dir: str):
-    timeout_seconds = 300
+    timeout_seconds = 120.0
     mvn_path = _get_maven_executable()
     try:
         result = subprocess.run(
@@ -186,6 +239,7 @@ def run_pitest(project_dir: str, target_classes: str, target_tests: str):
             "org.pitest:pitest-maven:mutationCoverage",
             f"-DtargetClasses={target_classes}",
             f"-DtargetTests={target_tests}",
+            "-Dthreads=12",
             "-DoutputFormats=XML,HTML",
         ],
         cwd=project_dir,
@@ -526,20 +580,143 @@ def strip_markdown_code_fence(text: str) -> str:
 
     return stripped
 
+def strip_comments_for_long_prompt(src: str) -> str:
+    orig_length = len(src)
+    if orig_length < 64000 * 4: # approximately 4 chars = 1 token -> only remove comments if necessary
+        return src
+
+    lines = src.splitlines()
+    new_lines = []
+    comment_markers = ('/**', '/*', '*', '*/', '//')
+    for line in lines:
+        if not line.strip().startswith('//') and '//' in line:
+            index = line.find('//')
+            new_lines.append(line[:index])
+        elif not line.strip().startswith(comment_markers):
+            new_lines.append(line)
+
+    stripped = "\n".join(new_lines)
+    print(f"[Utils] Reduced length of prompt from {orig_length} to {len(stripped)}")
+    return stripped
+
 def get_relevant_source_files(agent_state: Mapping[str, Any]) -> list[SourceCodeFileData]:
     all_files = agent_state["all_files"]
     class_under_test = get_current_class_under_test(agent_state)
-    relevant_files = []
+    relevant_files: list[SourceCodeFileData] = []
 
     for source_file in all_files:
         if source_file.file_path == class_under_test.file_path:
             continue
 
         class_match = CLASS_RE.search(source_file.file_content)
-        if class_match and class_match.group(1) in class_under_test.file_content:
+        if not class_match or not class_match.group(1) or not class_match.group(1) in class_under_test.file_content:
+            continue
+        source_class_name = class_match.group(1)
+        if is_concrete_class(source_file.file_content):
+            compacted = compact_relevant_concrete_class(class_under_test, source_file)
+            if compacted:
+                print(source_class_name)
+                relevant_files.append(compacted)
+        if is_enum_name(source_class_name, source_file.file_content):
+            print(source_class_name)
+            relevant_files.append(SourceCodeFileData(source_file.file_path, source_file.file_content))
+        if is_abstract_class_name(source_class_name, source_file.file_content):
+            print(source_class_name)
             relevant_files.append(source_file)
+            extending_class = find_extending_class(source_class_name, all_files)
+            compacted_extending_class = compact_relevant_concrete_class(class_under_test, extending_class)
+            if compacted_extending_class:
+                x = compacted_extending_class.file_path.rfind('\\')
+                print(compacted_extending_class.file_path[x:].replace(".java", ""))
+                relevant_files.append(compacted_extending_class)
+        if is_interface_name(source_class_name, source_file.file_content):
+            print(source_class_name)
+            relevant_files.append(source_file)
+            implementing_class = find_implementing_class(source_class_name, all_files)
+            compacted_implementing_class = compact_relevant_concrete_class(class_under_test, implementing_class)
+            if compacted_implementing_class:
+                x = compacted_implementing_class.file_path.rfind('\\')
+                print(compacted_implementing_class.file_path[x:].replace(".java", ""))
+                relevant_files.append(compacted_implementing_class)
 
-    return relevant_files
+    return deduplicate_source_code_file_data(relevant_files)
+
+def is_enum_name(source_class_name: str, source_code_content: str) -> bool:
+    return re.compile(r"\benum " + source_class_name + r"\b").search(source_code_content) is not None
+
+def is_abstract_class_name(source_class_name: str, source_code_content: str) -> bool:
+    return re.compile(r"\babstract class " + source_class_name + r"\b").search(source_code_content) is not None
+
+def is_interface_name(source_class_name: str, source_code_content: str) -> bool:
+    return re.compile(r"\binterface " + source_class_name + r"\b").search(source_code_content) is not None
+
+def find_extending_class(source_class_name: str, all_files: list[SourceCodeFileData]) -> SourceCodeFileData | None:
+    for source_file in all_files:
+        if re.compile(r"\bextends " + source_class_name + r"\b").search(source_file.file_content):
+            return source_file
+    return None
+
+def find_implementing_class(source_class_name: str, all_files: list[SourceCodeFileData]) -> SourceCodeFileData | None:
+    for source_file in all_files:
+        if re.compile(r"\bimplements " + source_class_name + r"\b").search(source_file.file_content):
+            return source_file
+    return None
+
+def compact_relevant_concrete_class(class_under_test: SourceCodeFileData | None, source_file: SourceCodeFileData | None) -> SourceCodeFileData | None:
+        if not class_under_test or not source_file:
+            return None
+        methods = extract_methods(source_file.file_content)
+        snippets = []
+        for method in methods:
+            if method.get("name") in class_under_test.file_content and method.get("source"):
+                snippets.append(method.get("source"))
+        if snippets:
+            return SourceCodeFileData(source_file.file_path, "\n...\n".join(snippets))
+        return None
+
+def deduplicate_source_code_file_data(data: List[SourceCodeFileData]) -> List[SourceCodeFileData]:
+    cache = set()
+    deduplicated_list: List[SourceCodeFileData] = []
+    for source_file in data:
+        if source_file.file_path not in cache:
+            cache.add(source_file.file_path)
+            deduplicated_list.append(source_file)
+    return deduplicated_list
+
+def node_text(source: bytes, node):
+    return source[node.start_byte:node.end_byte].decode("utf-8")
+
+JAVA_LANGUAGE = Language(tsjava.language())
+parser = Parser(JAVA_LANGUAGE)
+
+def walk(node):
+    yield node
+
+    for child in node.children:
+        yield from walk(child)
+
+def extract_methods(java_code: str):
+    source = java_code.encode("utf-8")
+    tree = parser.parse(source)
+
+    results = []
+
+    for node in walk(tree.root_node):
+        if node.type not in {"method_declaration", "constructor_declaration"}:
+            continue
+
+        name_node = node.child_by_field_name("name")
+        if name_node is None:
+            continue
+
+        results.append({
+            "kind": "constructor" if node.type == "constructor_declaration" else "method",
+            "name": node_text(source, name_node),
+            "source": node_text(source, node),
+            "line": node.start_point.row + 1,
+        })
+
+    return results
 
 def get_current_class_under_test(agent_state: Mapping[str, Any]) -> SourceCodeFileData:
     all_test_files = agent_state["all_test_files"]

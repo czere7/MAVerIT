@@ -8,8 +8,10 @@ from utils import SourceCodeFileData
 
 class AgentState(TypedDict, total=False):
     messages: Annotated[Sequence[AnyMessage], add_messages]
+    run_id: str
     input_tokens: int
     output_tokens: int
+    total_tokens: int
     current_class_index: int
     all_files: List[SourceCodeFileData]
     all_test_files: List[SourceCodeFileData]

@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 from Extractor import Extractor
-from utils import get_working_directory, initial_metric_state, is_concrete_class, retrieve_current_class_index
+from utils import get_working_directory, initial_metric_state, is_concrete_class, retrieve_checkpoint
 
 if TYPE_CHECKING:
     from AgentState import AgentState
@@ -25,10 +25,14 @@ def file_retriever_node(agent_state: "AgentState") -> dict:
         f"{len(test_target_files)} concrete classes will be tested."
     )
 
-    current_class_index = retrieve_current_class_index()
+    checkpoint = retrieve_checkpoint()
     return {
         "all_files": extracted_files,
         "all_test_files": test_target_files,
-        "current_class_index": current_class_index,
+        "current_class_index": checkpoint.get("class_index"),
+        "run_id": checkpoint.get("run_id"),
+        "input_tokens": checkpoint.get("input_tokens"),
+        "output_tokens": checkpoint.get("output_tokens"),
+        "total_tokens": checkpoint.get("total_tokens"),
         **initial_metric_state(),
     }

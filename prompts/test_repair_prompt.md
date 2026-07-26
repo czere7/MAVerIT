@@ -13,8 +13,6 @@ The current generated test class failed Maven compilation or test execution. Com
 
 If a last known compilable version of the test class is provided, use it as a stable baseline. Preserve useful working structure from that version while keeping valid new tests from the current failed version when they can be repaired safely.
 
-Nearby existing tests from the same Maven module may also be provided. Use them only as examples of project-local test style, imports, package layout, helper patterns, and dependency usage. Do not copy assertions unless they apply to the class under test.
-
 Do not invent APIs that are not visible in the provided source files.
 
 # Expected Outcome
@@ -64,7 +62,3 @@ The repaired test class must:
 ## Relevant Source Files
 
 {relevant_source_files}
-
-## Existing Nearby Test Examples
-
-{nearby_test_examples}

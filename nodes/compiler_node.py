@@ -1,7 +1,8 @@
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from utils import ensure_file, get_current_class_under_test, get_java_entity_name, get_working_directory, run_maven
+from utils import ensure_file, get_current_class_under_test, get_java_entity_name, get_working_directory, run_maven, \
+    write_compiler_log
 
 if TYPE_CHECKING:
     from AgentState import AgentState
@@ -19,6 +20,8 @@ def compiler_node(agent_state: "AgentState") -> dict:
     test_file_path = _write_test_class(project_dir, source_file_path, test_class)
     print(f"[compiler_node] Test file written to: {test_file_path}")
     maven_result = run_maven(str(project_dir))
+
+    write_compiler_log(maven_result["ok"], agent_state)
 
     compiler_feedback = _format_compiler_feedback(
         ok=maven_result["ok"],
@@ -43,6 +46,7 @@ def compiler_node(agent_state: "AgentState") -> dict:
         print("[compiler_node] Maven test run passed. Stored this test as last known compilable version.")
     else:
         print("[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.")
+        print(compiler_feedback)
 
     return state_update
 
@@ -103,6 +107,13 @@ def _compact_maven_failure(combined_result: str) -> str:
     else:
         start_index = max(0, build_failure_index - 120)
         compacted = "\n".join(lines[start_index : build_failure_index + 1])
+
+    if '[ERROR]' in compacted:
+        error_index = compacted.find("[ERROR]")
+        compacted = compacted[error_index:]
+    if '[INFO] Results:' in compacted:
+        error_index = compacted.find("[INFO] Results:")
+        compacted = compacted[error_index:]
 
     max_chars = 12000
     if len(compacted) > max_chars:

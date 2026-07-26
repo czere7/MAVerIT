@@ -11,8 +11,6 @@ The production class under test is located at:
 
 The current test class already exists and should be preserved. A parsed JaCoCo coverage summary for the class under test is provided below. Relevant source files referenced by the class under test are also included to help understand collaborators, constructors, return types, exceptions, and branch behavior.
 
-Nearby existing tests from the same Maven module may also be provided. Use them only as examples of project-local test style, imports, package layout, helper patterns, and dependency usage. Do not copy assertions unless they apply to the class under test.
-
 Do not rewrite the test class from scratch. Do not remove existing valid tests unless they are duplicated or prevent compilation.
 
 # Expected Outcome
@@ -59,7 +57,3 @@ The updated test class must:
 ## Relevant Source Files
 
 {relevant_source_files}
-
-## Existing Nearby Test Examples
-
-{nearby_test_examples}

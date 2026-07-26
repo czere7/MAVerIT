@@ -11,8 +11,6 @@ The production class under test is located at:
 
 Relevant source files that are referenced by the class under test are provided after the class under test. Use them to understand collaborators, constructors, constants, return types, exceptions, and domain behavior.
 
-Nearby existing tests from the same Maven module may also be provided. Use them only as examples of project-local test style, imports, package layout, helper patterns, and dependency usage. Do not copy assertions unless they apply to the class under test.
-
 Do not assume access to source files that are not included in this prompt.
 
 # Expected Outcome
@@ -45,7 +43,3 @@ The test class must:
 ## Relevant Source Files
 
 {relevant_source_files}
-
-## Existing Nearby Test Examples
-
-{nearby_test_examples}

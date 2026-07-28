@@ -38,9 +38,9 @@ class ModelWrapper:
                 with path.open("a", encoding="utf-8") as file:
                     file.write(json.dumps({
                         "time_stamp": time_stamp,
-                        "prompt": str(prompt_input) if not isinstance(prompt_input, Sequence) else str(list(prompt_input)),
+                        "prompt": prompt_input,
                         "response": message_to_dict(response),
-                    }))
+                    })+"\n")
                 return response
             except openai.APIConnectionError:
                 self._handle_timeout()

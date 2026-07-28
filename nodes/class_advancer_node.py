@@ -26,7 +26,7 @@ def class_advancer_node(agent_state: "AgentState") -> dict:
     return advance_to_next_class(agent_state, runtime_total)
 
 def _write_metadata(run_id, runtime):
-    metadata_path = Path().resolve() / f"{run_id}" / "metadata.txt"
+    metadata_path = Path().resolve() / f"{run_id}" / "metadata.json"
     if not metadata_path.exists():
         metadata = {
             "model": config.get("MODEL", ""),
@@ -34,6 +34,7 @@ def _write_metadata(run_id, runtime):
             "working_directory": config.get("WORKING_DIRECTORY", ""),
             "max_repair_attempts": config.get("MAX_REPAIR_ATTEMPTS", ""),
             "total_runtime_ms": runtime,
+            "run_id": run_id,
             "thresholds": {
                 "coverage": config.get("COVERAGE_IMPROVEMENT_THRESHOLD", ""),
                 "mutation": config.get("MUTATION_IMPROVEMENT_THRESHOLD", ""),

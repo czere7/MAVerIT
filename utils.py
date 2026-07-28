@@ -121,7 +121,7 @@ def write_to_log_file(content:str, run_id: str):
     log_path = Path().resolve() / f"{run_id}" / "log.jsonl"
     ensure_file(log_path)
     with log_path.open("a", encoding="utf-8") as file:
-        file.write(content)
+        file.write(content + "\n")
 
 def count_test_without_assert(src: str) -> int:
     junit_asserts = [
@@ -136,9 +136,13 @@ def count_test_without_assert(src: str) -> int:
     assertion_pattern = re.compile(
         rf"\b(?:{'|'.join(map(re.escape, junit_asserts))})\s*\("
     )
+    annotated_assertion_pattern = re.compile(
+        r"\s*\([^)]*\bexpected\s*=.*Exception\.class\b[^)]*\)",
+        re.DOTALL,
+    )
 
     return sum(
-        not assertion_pattern.search(test_body)
+        (not assertion_pattern.search(test_body) and not annotated_assertion_pattern.search(test_body))
         for test_body in src.split("@Test")[1:]
     )
 

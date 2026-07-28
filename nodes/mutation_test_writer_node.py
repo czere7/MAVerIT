@@ -22,7 +22,7 @@ def mutation_test_writer_node(agent_state: "AgentState") -> dict[str, str]:
         f"(iteration {agent_state.get('mutation_iterations', 0) + 1})."
     )
     prompt = _build_prompt(agent_state)
-    response = ModelWrapper().invoke(prompt)
+    response = ModelWrapper().invoke(prompt, agent_state.get("run_id", ""))
     input_tokens = response.usage_metadata.get('input_tokens')
     output_tokens = response.usage_metadata.get('output_tokens')
     updated_test_class = strip_markdown_code_fence(extract_response_content(response))
@@ -30,7 +30,7 @@ def mutation_test_writer_node(agent_state: "AgentState") -> dict[str, str]:
     if not updated_test_class:
         raise RuntimeError("Mutation test writer model returned an empty response.")
 
-    write_log(f"[mutation_test_writer_node] Produced updated test class with {len(updated_test_class.splitlines())} line(s).", response.usage_metadata, agent_state)
+    # write_log(f"[mutation_test_writer_node] Produced updated test class with {len(updated_test_class.splitlines())} line(s).", response.usage_metadata, agent_state)
 
     return {
         "test_class": updated_test_class,

@@ -1,11 +1,16 @@
+import json
+from pathlib import Path
+from time import time
 from typing import Sequence, Any
 
 import openai
+from langchain_core.messages import message_to_dict
 from langchain_core.prompt_values import PromptValue
 from langchain_ollama import ChatOllama
 from langchain_openai import ChatOpenAI
 
-from utils import config
+from utils import config, ensure_file
+
 
 class ModelWrapper:
     instance = None
@@ -23,10 +28,20 @@ class ModelWrapper:
             cls.instance = super().__new__(cls)
         return cls.instance
 
-    def invoke(self, prompt_input: PromptValue | str | Sequence[Any]):
+    def invoke(self, prompt_input: PromptValue | str | Sequence[Any], run_id: str):
+        time_stamp = round(time() * 1000)
+        path = Path().resolve() / f"{run_id}" / "prompt-response-pairs.jsonl"
+        ensure_file(path)
         while self.time_out_seconds < int(config.get("MAX_LLM_TIMEOUT", 60)):
             try:
-                return self.model.invoke(prompt_input)
+                response = self.model.invoke(prompt_input)
+                with path.open("a", encoding="utf-8") as file:
+                    file.write(json.dumps({
+                        "time_stamp": time_stamp,
+                        "prompt": str(prompt_input) if not isinstance(prompt_input, Sequence) else str(list(prompt_input)),
+                        "response": message_to_dict(response),
+                    }))
+                return response
             except openai.APIConnectionError:
                 self._handle_timeout()
         raise TimeoutError("Timeout exceeded maximum allowed value")

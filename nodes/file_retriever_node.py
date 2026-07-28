@@ -14,7 +14,7 @@ def file_retriever_node(agent_state: "AgentState") -> dict:
     test_target_files = [
         source_file
         for source_file in extracted_files
-        if is_concrete_class(source_file.file_content)
+        if is_concrete_class(source_file)
     ]
 
     if not test_target_files:
@@ -34,5 +34,6 @@ def file_retriever_node(agent_state: "AgentState") -> dict:
         "input_tokens": checkpoint.get("input_tokens"),
         "output_tokens": checkpoint.get("output_tokens"),
         "total_tokens": checkpoint.get("total_tokens"),
+        "assert_less_test_amount": checkpoint.get("assert_less_test_amount", 0),
         **initial_metric_state(),
     }

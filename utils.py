@@ -7,7 +7,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Mapping, TypedDict, List
 import xml.etree.ElementTree as ET
+import time
 
+from pip._internal.commands import search
 from tree_sitter import Language, Parser, Query, QueryCursor
 import tree_sitter_java as tsjava
 
@@ -40,20 +42,58 @@ class SourceCodeFileData:
     file_content: str
 
 def write_log(prefix: str, usage_metadata: UsageMetadata, agent_state: TypedDict):
-    # tokens
-    i_tokens = usage_metadata.get('input_tokens')
-    o_tokens = usage_metadata.get('output_tokens')
-    t_tokens = usage_metadata.get('total_tokens')
-    content = (f"{prefix}\n" +
-               f"\tinput tokens: {i_tokens}, {i_tokens + agent_state.get('input_tokens', 0)}\n" +
-               f"\toutput tokens: {o_tokens}, {o_tokens + agent_state.get('output_tokens', 0)}\n"
-               f"\ttotal tokens: {t_tokens}, {t_tokens + agent_state.get('total_tokens', 0)}\n")
+    content = json.dumps({
+        "time_stamp": round(time.time() * 1000),
+        "assert_less_test_amount": "",
+        "prefix": prefix,
+        "input_tokens": int(agent_state.get("input_tokens", 0)) + int(usage_metadata.get('input_tokens', 0)),
+        "output_tokens": int(agent_state.get("output_tokens", 0)) + int(usage_metadata.get('output_tokens', 0)),
+        "total_tokens": int(agent_state.get("total_tokens", 0)) + int(usage_metadata.get('total_tokens', 0)),
+        "current_class_index": agent_state.get("current_class_index"),
+        "test_class": agent_state.get("test_class"),
+        "compiler_success": agent_state.get("compiler_success"),
+        "compiler_feedback": agent_state.get("compiler_feedback"),
+        "test_file_path": agent_state.get("test_file_path"),
+        "last_compilable_test_class": agent_state.get("last_compilable_test_class"),
+        "last_compilable_test_file_path": agent_state.get("last_compilable_test_file_path"),
+        "coverage_previous": agent_state.get("coverage_previous"),
+        "coverage_current": agent_state.get("coverage_current"),
+        "coverage_feedback": agent_state.get("coverage_feedback"),
+        "mutation_previous": agent_state.get("mutation_previous"),
+        "mutation_current": agent_state.get("mutation_current"),
+        "mutation_feedback": agent_state.get("mutation_feedback"),
+        "active_validation_phase": agent_state.get("active_validation_phase"),
+        "repair_attempts": agent_state.get("repair_attempts"),
+        "coverage_iterations": agent_state.get("coverage_iterations"),
+        "mutation_iterations": agent_state.get("mutation_iterations"),
+    })
     write_to_log_file(content, agent_state['run_id'])
 
-def write_compiler_log(compile_passed: bool, agent_state: TypedDict):
+def write_compiler_log(compile_passed: bool, mvn_result: str, agent_state: TypedDict):
+    content = {
+        "time_stamp": round(time.time() * 1000),
+        "assert_less_test_amount": agent_state.get("assert_less_test_amount", 0),
+        "input_tokens": agent_state.get("input_tokens"),
+        "output_tokens": agent_state.get("output_tokens"),
+        "total_tokens": agent_state.get("total_tokens"),
+        "current_class_index": agent_state.get("current_class_index"),
+        "test_class": agent_state.get("test_class"),
+        "compiler_success": agent_state.get("compiler_success"),
+        "compiler_feedback": agent_state.get("compiler_feedback"),
+        "test_file_path": agent_state.get("test_file_path"),
+        "last_compilable_test_class": agent_state.get("last_compilable_test_class"),
+        "last_compilable_test_file_path": agent_state.get("last_compilable_test_file_path"),
+        "active_validation_phase": agent_state.get("active_validation_phase"),
+        "repair_attempts": agent_state.get("repair_attempts"),
+        "coverage_iterations": agent_state.get("coverage_iterations"),
+        "mutation_iterations": agent_state.get("mutation_iterations"),
+        "mutation": "None",
+        "coverage": "None",
+        "mvn_result": "BUILD SUCCESS",
+    }
     if not compile_passed:
-        content = "[compiler_node] Compilation failed.\n"
-        write_to_log_file(content, agent_state.get("run_id"))
+        content["mvn_result"] = mvn_result
+        write_to_log_file(json.dumps(content), agent_state.get("run_id"))
         return
     # common
     class_under_test = get_current_class_under_test(agent_state)
@@ -69,29 +109,52 @@ def write_compiler_log(compile_passed: bool, agent_state: TypedDict):
     run_jacoco(str(module_dir))
     target_class = get_java_fully_qualified_name(class_under_test.file_content)
     coverage = calculate_branch_coverage_for_class(find_jacoco_xml_reports(module_dir), target_class)
-    content = (f"[compiler_node] Compilation passed.\n"
-               f"\tmutation score: {mutation_score}\n"
-               f"\tcoverage: {coverage}\n")
-    write_to_log_file(content, agent_state.get("run_id"))
+    content['mutation'] = mutation_score
+    content['coverage'] = coverage
+    content['assert_less_test_amount'] = (
+            int(agent_state.get("assert_less_test_amount", 0)) +
+            count_test_without_assert(agent_state.get("test_class")))
+    write_to_log_file(json.dumps(content), agent_state.get("run_id"))
 
 def write_to_log_file(content:str, run_id: str):
-    print(content, end="")
-    log_path = Path().resolve() / f"{run_id}" / "log.txt"
+    # print(json.dumps(json.loads(content), indent=2), end="")
+    log_path = Path().resolve() / f"{run_id}" / "log.jsonl"
     ensure_file(log_path)
     with log_path.open("a", encoding="utf-8") as file:
         file.write(content)
 
-def is_concrete_class(java_code: str) -> bool:
+def count_test_without_assert(src: str) -> int:
+    junit_asserts = [
+        'assertAll', 'assertArrayEquals', 'assertDoesNotThrow',
+        'assertEquals', 'assertFalse',
+        'assertInstanceOf', 'assertIterableEquals', 'assertLinesMatch',
+        'assertNotNull', 'assertNotSame', 'assertNotEquals',
+        'assertNull', 'assertSame', 'assertThat',
+        'assertThrows', 'assertThrowsExactly', 'assertTimeout',
+        'assertTimeoutPreemptively', 'assertTrue', 'fail']
+
+    assertion_pattern = re.compile(
+        rf"\b(?:{'|'.join(map(re.escape, junit_asserts))})\s*\("
+    )
+
+    return sum(
+        not assertion_pattern.search(test_body)
+        for test_body in src.split("@Test")[1:]
+    )
+
+def is_concrete_class(data: SourceCodeFileData) -> bool:
+    java_code: str = data.file_content
+    expected_name = Path(data.file_path).parts[-1].replace(".java", "")
     class_pattern = re.compile(
         r'\b(public|protected|private)\s*'
         r'(final\s+)?'
         r'(?!abstract\s+)'
-        r'class\s+\w+',
+        r'class\s+'
+        r'(\w+)',
         re.MULTILINE
     )
-    # if re.search(r'\b(enum|interface)\s+\w+', java_code):
-    #     return False
-    return bool(class_pattern.search(java_code))
+    search_result = class_pattern.search(java_code)
+    return search_result is not None and search_result.group(len(search_result.regs)-1) is not None and search_result.group(len(search_result.regs)-1) == expected_name
 
 def persist_checkpoint(agent_state: TypedDict, next_index: int):
     tmp_file_location = str(config.get("CLASS_INDEX_TMP_FILE", "tmp.txt"))
@@ -101,6 +164,7 @@ def persist_checkpoint(agent_state: TypedDict, next_index: int):
         "input_tokens": agent_state['input_tokens'],
         "output_tokens": agent_state['output_tokens'],
         "total_tokens": agent_state['total_tokens'],
+        "assert_less_test_amount": agent_state.get('assert_less_test_amount', 0) + count_test_without_assert(agent_state.get("test_class")),
     }
     with open(tmp_file_location, "w", encoding="UTF-8") as file:
         file.write(json.dumps(state))
@@ -116,6 +180,7 @@ def retrieve_checkpoint() -> dict:
         "input_tokens": 0,
         "output_tokens": 0,
         "total_tokens": 0,
+        "assert_less_test_amount": 0,
     }
 
 def run_maven(project_dir: str):
@@ -612,7 +677,7 @@ def get_relevant_source_files(agent_state: Mapping[str, Any]) -> list[SourceCode
         if not class_match or not class_match.group(1) or not class_match.group(1) in class_under_test.file_content:
             continue
         source_class_name = class_match.group(1)
-        if is_concrete_class(source_file.file_content):
+        if is_concrete_class(source_file):
             compacted = compact_relevant_concrete_class(class_under_test, source_file)
             if compacted:
                 print(source_class_name)
@@ -753,10 +818,12 @@ def initial_metric_state() -> dict[str, Any]:
 def reset_state_for_current_class() -> dict[str, Any]:
     return initial_metric_state()
 
-def advance_to_next_class(agent_state: Mapping[str, Any]) -> dict[str, Any]:
+def advance_to_next_class(agent_state: Mapping[str, Any], new_runtime: float) -> dict[str, Any]:
     next_index = agent_state["current_class_index"] + 1
     return {
         "current_class_index": next_index,
+        "assert_less_test_amount": agent_state.get('assert_less_test_amount', 0) + count_test_without_assert(agent_state.get("test_class")),
+        "runtime": new_runtime + agent_state.get("runtime", 0),
         **reset_state_for_current_class(),
     }
 

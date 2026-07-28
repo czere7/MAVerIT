@@ -9,6 +9,8 @@ from utils import SourceCodeFileData
 class AgentState(TypedDict, total=False):
     messages: Annotated[Sequence[AnyMessage], add_messages]
     run_id: str
+    runtime: float
+    current_test_start_time: float
     input_tokens: int
     output_tokens: int
     total_tokens: int
@@ -35,3 +37,4 @@ class AgentState(TypedDict, total=False):
     repair_attempts: int
     coverage_iterations: int
     mutation_iterations: int
+    assert_less_test_amount: int

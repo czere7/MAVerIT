@@ -21,13 +21,13 @@ def compiler_node(agent_state: "AgentState") -> dict:
     print(f"[compiler_node] Test file written to: {test_file_path}")
     maven_result = run_maven(str(project_dir))
 
-    write_compiler_log(maven_result["ok"], agent_state)
-
     compiler_feedback = _format_compiler_feedback(
         ok=maven_result["ok"],
         test_file_path=test_file_path,
         combined_result=maven_result["combined_result"],
     )
+
+    write_compiler_log(maven_result["ok"], compiler_feedback, agent_state)
 
     state_update = {
         "compiler_success": maven_result["ok"],

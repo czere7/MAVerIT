@@ -22,7 +22,7 @@ def test_repair_node(agent_state: "AgentState") -> dict[str, str]:
         f"(attempt {agent_state.get('repair_attempts', 0) + 1})."
     )
     prompt = _build_prompt(agent_state)
-    response = ModelWrapper().invoke(prompt)
+    response = ModelWrapper().invoke(prompt, agent_state.get("run_id", ""))
     input_tokens = response.usage_metadata.get('input_tokens')
     output_tokens = response.usage_metadata.get('output_tokens')
     repaired_test_class = strip_markdown_code_fence(extract_response_content(response))
@@ -30,7 +30,7 @@ def test_repair_node(agent_state: "AgentState") -> dict[str, str]:
     if not repaired_test_class:
         raise RuntimeError("Test repair model returned an empty response.")
 
-    write_log(f"[test_repair_node] Produced repaired test class with {len(repaired_test_class.splitlines())} line(s).", response.usage_metadata, agent_state)
+    # write_log(f"[test_repair_node] Produced repaired test class with {len(repaired_test_class.splitlines())} line(s).", response.usage_metadata, agent_state)
 
     return {
         "test_class": repaired_test_class,

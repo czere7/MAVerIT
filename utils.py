@@ -835,3 +835,23 @@ def _content_part_to_text(part: Any) -> str:
     if isinstance(part, dict):
         return str(part.get("text", ""))
     return str(part)
+
+def strip_response_natural_text(response: str) -> str:
+    if '```' in response:
+        response_chunks = response.split('```')
+        
+        if (len(response_chunks) % 2 == 0):
+            return response # There unpaired chunks, and it's difficult to determine it is actually code
+        
+        code_chunks = [item for i, item in enumerate(response_chunks) if i % 2 == 1]
+        
+        candidate_code_chunk = max(code_chunks, key=len)
+
+        candidate_code_chunk_lines = candidate_code_chunk.split('\n')
+        if 'package' not in candidate_code_chunk_lines[0] and 'import' not in candidate_code_chunk_lines[0] and 'class' not in candidate_code_chunk_lines[0]:
+            candidate_code_chunk_lines = candidate_code_chunk_lines[1:]
+        candidate_code_chunk = '\n'.join(candidate_code_chunk_lines)
+
+        return candidate_code_chunk
+    
+    return response

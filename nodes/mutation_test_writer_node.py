@@ -22,7 +22,7 @@ def mutation_test_writer_node(agent_state: "AgentState") -> dict[str, str]:
         f"(iteration {agent_state.get('mutation_iterations', 0) + 1})."
     )
     prompt = _build_prompt(agent_state)
-    response = ModelWrapper().invoke(prompt, agent_state.get("run_id", ""))
+    response = ModelWrapper().invoke(prompt, agent_state.get("run_id", ""), "mutation_test_writer_node")
     input_tokens = response.usage_metadata.get('input_tokens')
     output_tokens = response.usage_metadata.get('output_tokens')
     updated_test_class = strip_markdown_code_fence(extract_response_content(response))

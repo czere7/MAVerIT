@@ -27,8 +27,6 @@ def compiler_node(agent_state: "AgentState") -> dict:
         combined_result=maven_result["combined_result"],
     )
 
-    write_compiler_log(maven_result["ok"], compiler_feedback, agent_state)
-
     state_update = {
         "compiler_success": maven_result["ok"],
         "compiler_feedback": compiler_feedback,
@@ -47,6 +45,8 @@ def compiler_node(agent_state: "AgentState") -> dict:
     else:
         print("[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.")
         print(compiler_feedback)
+
+    write_compiler_log(state_update, agent_state)
 
     return state_update
 

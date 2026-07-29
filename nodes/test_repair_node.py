@@ -22,7 +22,7 @@ def test_repair_node(agent_state: "AgentState") -> dict[str, str]:
         f"(attempt {agent_state.get('repair_attempts', 0) + 1})."
     )
     prompt = _build_prompt(agent_state)
-    response = ModelWrapper().invoke(prompt, agent_state.get("run_id", ""))
+    response = ModelWrapper().invoke(prompt, agent_state.get("run_id", ""), "test_repair_node")
     input_tokens = response.usage_metadata.get('input_tokens')
     output_tokens = response.usage_metadata.get('output_tokens')
     repaired_test_class = strip_markdown_code_fence(extract_response_content(response))

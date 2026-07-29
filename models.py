@@ -28,7 +28,7 @@ class ModelWrapper:
             cls.instance = super().__new__(cls)
         return cls.instance
 
-    def invoke(self, prompt_input: PromptValue | str | Sequence[Any], run_id: str):
+    def invoke(self, prompt_input: PromptValue | str | Sequence[Any], run_id: str, node_name: str):
         time_stamp = round(time() * 1000)
         path = Path().resolve() / f"{run_id}" / "prompt-response-pairs.jsonl"
         ensure_file(path)
@@ -38,6 +38,7 @@ class ModelWrapper:
                 with path.open("a", encoding="utf-8") as file:
                     file.write(json.dumps({
                         "time_stamp": time_stamp,
+                        "node_name": node_name,
                         "prompt": prompt_input,
                         "response": message_to_dict(response),
                     })+"\n")

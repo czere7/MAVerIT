@@ -69,30 +69,28 @@ def write_log(prefix: str, usage_metadata: UsageMetadata, agent_state: TypedDict
     })
     write_to_log_file(content, agent_state['run_id'])
 
-def write_compiler_log(compile_passed: bool, mvn_result: str, agent_state: TypedDict):
+def write_compiler_log(state_update: dict, agent_state: TypedDict):
     content = {
         "time_stamp": round(time.time() * 1000),
-        "assert_less_test_amount": agent_state.get("assert_less_test_amount", 0),
+        "current_assert_less_test_amount": count_test_without_assert(agent_state.get("test_class")),
         "input_tokens": agent_state.get("input_tokens"),
         "output_tokens": agent_state.get("output_tokens"),
         "total_tokens": agent_state.get("total_tokens"),
         "current_class_index": agent_state.get("current_class_index"),
         "test_class": agent_state.get("test_class"),
-        "compiler_success": agent_state.get("compiler_success"),
-        "compiler_feedback": agent_state.get("compiler_feedback"),
-        "test_file_path": agent_state.get("test_file_path"),
-        "last_compilable_test_class": agent_state.get("last_compilable_test_class"),
-        "last_compilable_test_file_path": agent_state.get("last_compilable_test_file_path"),
+        "compiler_success": state_update.get("compiler_success"),
+        "compiler_feedback": state_update.get("compiler_feedback"),
+        "test_file_path": state_update.get("test_file_path"),
+        "last_compilable_test_class": state_update.get("last_compilable_test_class") if state_update.get("compiler_success") else agent_state.get("last_compilable_test_class"),
+        "last_compilable_test_file_path": state_update.get("last_compilable_test_file_path") if state_update.get("compiler_success") else agent_state.get("last_compilable_test_file_path"),
         "active_validation_phase": agent_state.get("active_validation_phase"),
         "repair_attempts": agent_state.get("repair_attempts"),
         "coverage_iterations": agent_state.get("coverage_iterations"),
         "mutation_iterations": agent_state.get("mutation_iterations"),
         "mutation": "None",
         "coverage": "None",
-        "mvn_result": "BUILD SUCCESS",
     }
-    if not compile_passed:
-        content["mvn_result"] = mvn_result
+    if not state_update.get('compiler_success'):
         write_to_log_file(json.dumps(content), agent_state.get("run_id"))
         return
     # common
@@ -111,7 +109,7 @@ def write_compiler_log(compile_passed: bool, mvn_result: str, agent_state: Typed
     coverage = calculate_branch_coverage_for_class(find_jacoco_xml_reports(module_dir), target_class)
     content['mutation'] = mutation_score
     content['coverage'] = coverage
-    content['assert_less_test_amount'] = (
+    content['overall_assert_less_test_amount'] = (
             int(agent_state.get("assert_less_test_amount", 0)) +
             count_test_without_assert(agent_state.get("test_class")))
     write_to_log_file(json.dumps(content), agent_state.get("run_id"))

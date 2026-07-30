@@ -166,6 +166,7 @@ def persist_checkpoint(agent_state: TypedDict, next_index: int):
         "input_tokens": agent_state['input_tokens'],
         "output_tokens": agent_state['output_tokens'],
         "total_tokens": agent_state['total_tokens'],
+        "runtime": agent_state['runtime'],
         "assert_less_test_amount": agent_state.get('assert_less_test_amount', 0) + count_test_without_assert(agent_state.get("test_class")),
     }
     with open(tmp_file_location, "w", encoding="UTF-8") as file:
@@ -182,6 +183,7 @@ def retrieve_checkpoint() -> dict:
         "input_tokens": 0,
         "output_tokens": 0,
         "total_tokens": 0,
+        "runtime": 0.0,
         "assert_less_test_amount": 0,
     }
 
@@ -636,16 +638,37 @@ def extract_response_content(response: Any) -> str:
         return "\n".join(_content_part_to_text(part) for part in content).strip()
     return str(content).strip()
 
-def strip_markdown_code_fence(text: str) -> str:
-    stripped = text.strip()
-    if not stripped.startswith("```"):
-        return stripped
+# def strip_markdown_code_fence(text: str) -> str:
+#     stripped = text.strip()
+#     if not stripped.startswith("```"):
+#         return stripped
+#
+#     lines = stripped.splitlines()
+#     if len(lines) >= 2 and lines[-1].strip() == "```":
+#         return "\n".join(lines[1:-1]).strip()
+#
+#     return stripped
 
-    lines = stripped.splitlines()
-    if len(lines) >= 2 and lines[-1].strip() == "```":
-        return "\n".join(lines[1:-1]).strip()
+def strip_markdown_code_fence(response: str) -> str:
+    if '```' in response:
+        response_chunks = response.split('```')
 
-    return stripped
+        if (len(response_chunks) % 2 == 0):
+            return response  # There unpaired chunks, and it's difficult to determine it is actually code
+
+        code_chunks = [item for i, item in enumerate(response_chunks) if i % 2 == 1]
+
+        candidate_code_chunk = max(code_chunks, key=len)
+
+        candidate_code_chunk_lines = candidate_code_chunk.split('\n')
+        if 'package' not in candidate_code_chunk_lines[0] and 'import' not in candidate_code_chunk_lines[
+            0] and 'class' not in candidate_code_chunk_lines[0]:
+            candidate_code_chunk_lines = candidate_code_chunk_lines[1:]
+        candidate_code_chunk = '\n'.join(candidate_code_chunk_lines)
+
+        return candidate_code_chunk
+
+    return response
 
 def strip_comments_for_long_prompt(src: str) -> str:
     orig_length = len(src)

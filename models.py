@@ -78,7 +78,7 @@ class ModelWrapper:
             self.model = ChatOpenAI(
                 model=self.generation_model_name,
                 api_key=config['LITE_LLM_API_KEY'],
-                base_url="NOT_IMPLEMENTED",
+                base_url=config['LITE_LLM_BASE_URL'],
                 timeout=self.time_out_seconds,
             )
         else:

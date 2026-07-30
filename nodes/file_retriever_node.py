@@ -34,6 +34,7 @@ def file_retriever_node(agent_state: "AgentState") -> dict:
         "input_tokens": checkpoint.get("input_tokens"),
         "output_tokens": checkpoint.get("output_tokens"),
         "total_tokens": checkpoint.get("total_tokens"),
+        "runtime": checkpoint.get("runtime"),
         "assert_less_test_amount": checkpoint.get("assert_less_test_amount", 0),
         **initial_metric_state(),
     }

@@ -11,4 +11,6 @@ dependencies = [
     "pillow",
     "python-dotenv",
     "openai",
+    "tree-sitter",
+    "tree-sitter-java",
 ]

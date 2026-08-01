@@ -1,0 +1,244 @@
+java -classpath "C:\runnables\randoop-4.3.4\randoop-all-4.3.4.jar;target\classes" randoop.main.Main gentests --classlist=maverit_classes.txt --junit-output-dir=randoop-tests
+Randoop for Java version "4.3.4, local changes, branch master, commit 96e7279, 2025-06-06".
+
+Will try to generate tests for 75 classes.
+PUBLIC MEMBERS=1699
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2026-07-27T12:07:56.301Z     232M used)
+Progress update: steps=1000, test inputs generated=450, failing inputs=0      (2026-07-27T12:08:13.266Z     72.2M used)
+Progress update: steps=2000, test inputs generated=1063, failing inputs=0      (2026-07-27T12:08:36.657Z     417M used)
+Progress update: steps=2720, test inputs generated=1574, failing inputs=3      (2026-07-27T12:08:56.322Z     732M used)
+Progress update: steps=3000, test inputs generated=1771, failing inputs=3      (2026-07-27T12:09:02.762Z     173M used)
+Progress update: steps=4000, test inputs generated=2508, failing inputs=5      (2026-07-27T12:09:28.380Z     939M used)
+Progress update: steps=4260, test inputs generated=2699, failing inputs=7      (2026-07-27T12:09:36.366Z     49.3M used)
+Normal method executions: 298667
+Exceptional method executions: 958
+
+Average method execution time (normal termination):      0.000970
+Average method execution time (exceptional termination): 0.536
+Approximate memory usage 49.3M
+Explorer = ForwardGenerator(steps: 4260, null steps: 1561, num_sequences_generated: 2699;
+    allSequences: 2699, regresson seqs: 2644, error seqs: 7=7=7, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 48;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 193)
+
+Error-revealing test output:
+Error-revealing test count: 7
+Writing error-revealing JUnit tests...
+Created file C:\git\innovate\VibeTestRepos\jackson-core\randoop-tests\ErrorTest0.java
+Created file C:\git\innovate\VibeTestRepos\jackson-core\randoop-tests\ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 1709 regression sequences.
+
+Regression test output:
+Regression test count: 1709
+Writing regression JUnit tests...
+JUnit version 4.13.2
+...............................................................................................................................................................................................................................................................................................................................................................E.....................................E...............................................................................................................E.
+Time: 0.356
+There were 3 failures:
+1) test0351(RegressionTest0)
+java.lang.AssertionError: 'true' != 'false'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest0.test0351(RegressionTest0.java:6001)
+2) test0388(RegressionTest0)
+java.lang.AssertionError: 'true' != 'false'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest0.test0388(RegressionTest0.java:6861)
+3) test0499(RegressionTest0)
+java.lang.AssertionError: 'true' != 'false'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest0.test0499(RegressionTest0.java:9627)
+
+FAILURES!!!
+Tests run: 500,  Failures: 3
+Created file C:\git\innovate\VibeTestRepos\jackson-core\randoop-tests\RegressionTest0.java
+JUnit version 4.13.2
+..................E....................................E..................................................E.............................................................................................................................................................................................................................................E...................E............................................................E................................................................................
+Time: 0.217
+There were 6 failures:
+1) test0518(RegressionTest1)
+java.lang.AssertionError: 'true' != 'false'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest1.test0518(RegressionTest1.java:509)
+2) test0554(RegressionTest1)
+java.lang.AssertionError: '535530993' != '-1771508942'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest1.test0554(RegressionTest1.java:1532)
+3) test0604(RegressionTest1)
+java.lang.AssertionError: 'null' != '100.0' expected:<null> but was:<100.0>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at RegressionTest1.test0604(RegressionTest1.java:3113)
+4) test0841(RegressionTest1)
+java.lang.AssertionError: '2' != '3'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest1.test0841(RegressionTest1.java:10996)
+5) test0860(RegressionTest1)
+java.lang.AssertionError: '-207948795' != '-207509010'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest1.test0860(RegressionTest1.java:11732)
+6) test0920(RegressionTest1)
+java.lang.AssertionError: '471124653' != '1091194850'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest1.test0920(RegressionTest1.java:13601)
+
+FAILURES!!!
+Tests run: 500,  Failures: 6
+Created file C:\git\innovate\VibeTestRepos\jackson-core\randoop-tests\RegressionTest1.java
+JUnit version 4.13.2
+..........................E.......................................E................................................................................E........E.................................E....................................................................E.................E....................E..................................................E...................................................................E............E..............................................E.............................E.....
+Time: 0.264
+There were 13 failures:
+1) test1026(RegressionTest2)
+java.lang.AssertionError: 'true' != 'false'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest2.test1026(RegressionTest2.java:888)
+2) test1065(RegressionTest2)
+java.lang.AssertionError: 'null' != '"_2QK\n"' expected:<null> but was:<"_2QK\n">
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at RegressionTest2.test1065(RegressionTest2.java:2368)
+3) test1145(RegressionTest2)
+java.lang.AssertionError: '-207995253' != '-207652452'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest2.test1145(RegressionTest2.java:4777)
+4) test1153(RegressionTest2)
+java.lang.AssertionError: '-302288298' != '1801838965'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest2.test1153(RegressionTest2.java:5190)
+5) test1186(RegressionTest2)
+java.lang.AssertionError: '-1552204503' != '-1552242809'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest2.test1186(RegressionTest2.java:6310)
+6) test1254(RegressionTest2)
+java.lang.AssertionError: 'null' != '100.0' expected:<null> but was:<100.0>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at RegressionTest2.test1254(RegressionTest2.java:8329)
+7) test1271(RegressionTest2)
+java.lang.AssertionError: '-1552204487' != '-1552238607'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest2.test1271(RegressionTest2.java:8825)
+8) test1291(RegressionTest2)
+java.lang.AssertionError: '-206613006' != '-206291850'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest2.test1291(RegressionTest2.java:9487)
+9) test1341(RegressionTest2)
+java.lang.AssertionError: '-1005790983' != '-922109816'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest2.test1341(RegressionTest2.java:11231)
+10) test1408(RegressionTest2)
+java.lang.AssertionError: 'null' != '
+' expected:<null> but was:<
+>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at RegressionTest2.test1408(RegressionTest2.java:13508)
+11) test1420(RegressionTest2)
+java.lang.AssertionError: 'null' != 'JSON' expected:<null> but was:<JSON>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at RegressionTest2.test1420(RegressionTest2.java:13730)
+12) test1466(RegressionTest2)
+org.junit.ComparisonFailure: '[tools.jackson.core.sym.ByteQuadsCanonicalizer: size=0, hashSize=0, 0/0/0/0 pri/sec/ter/spill (=0), total:0]' != '
+' expected:<[[tools.jackson.core.sym.ByteQuadsCanonicalizer: size=0, hashSize=0, 0/0/0/0 pri/sec/ter/spill (=0), total:0]]> but was:<[
+]>
+        at org.junit.Assert.assertEquals(Assert.java:117)
+        at RegressionTest2.test1466(RegressionTest2.java:15146)
+13) test1495(RegressionTest2)
+java.lang.AssertionError: '-1254196789' != '-1291380909'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest2.test1495(RegressionTest2.java:16155)
+
+FAILURES!!!
+Tests run: 500,  Failures: 13
+JUnit version 4.13.2
+....................................................................................................................................................................................................................................................................................................................................................................................................................................E................................................................................
+Time: 0.305
+There was 1 failure:
+1) test1420(RegressionTest2)
+org.junit.ComparisonFailure: '[tools.jackson.core.sym.ByteQuadsCanonicalizer: size=0, hashSize=0, 0/0/0/0 pri/sec/ter/spill (=0), total:0]' != '
+' expected:<[[tools.jackson.core.sym.ByteQuadsCanonicalizer: size=0, hashSize=0, 0/0/0/0 pri/sec/ter/spill (=0), total:0]]> but was:<[
+]>
+        at org.junit.Assert.assertEquals(Assert.java:117)
+        at RegressionTest2.test1420(RegressionTest2.java:13731)
+
+FAILURES!!!
+Tests run: 500,  Failures: 1
+Created file C:\git\innovate\VibeTestRepos\jackson-core\randoop-tests\RegressionTest2.java
+                                                                                                                                                                        JUnit version 4.13.2
+.....................................................................E......................................E.............................................................................E.........................
+Time: 0.216
+There were 3 failures:
+1) test1569(RegressionTest3)
+java.lang.AssertionError: 'true' != 'false'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest3.test1569(RegressionTest3.java:1819)
+2) test1607(RegressionTest3)
+java.lang.AssertionError: '-208081158' != '-207851370'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest3.test1607(RegressionTest3.java:3098)
+3) test1684(RegressionTest3)
+java.lang.AssertionError: '824009085' != '1428015511'
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at RegressionTest3.test1684(RegressionTest3.java:5651)
+
+FAILURES!!!
+Tests run: 209,  Failures: 3
+Created file C:\git\innovate\VibeTestRepos\jackson-core\randoop-tests\RegressionTest3.java
+Created file C:\git\innovate\VibeTestRepos\jackson-core\randoop-tests\RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  tools.jackson.core.sym.CharsToNameCanonicalizer.hashSeed()
+  Possibly flaky:  tools.jackson.core.sym.ByteQuadsCanonicalizer.tertiaryCount()
+  Possibly flaky:  tools.jackson.core.sym.ByteQuadsCanonicalizer.hashSeed()
+  Possibly flaky:  tools.jackson.core.sym.ByteQuadsCanonicalizer.calcHash(int,int)
+  Possibly flaky:  tools.jackson.core.sym.ByteQuadsCanonicalizer.calcHash(int,int,int)
+  Possibly flaky:  java.util.concurrent.ConcurrentHashMap.size()
+  Possibly flaky:  java.util.concurrent.ConcurrentHashMap.reduceEntriesToInt(long,java.util.function.ToIntFunction<java.util.Map.Entry<java.lang.String,java.lang.String>>,int,java.util.function.IntBinaryOperator)
+  Possibly flaky:  java.util.concurrent.ConcurrentHashMap.keySet()
+  Possibly flaky:  java.util.concurrent.ConcurrentHashMap.clear()
+  Possibly flaky:  java.util.concurrent.ConcurrentHashMap.putIfAbsent(java.lang.String,java.lang.String)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+Done looking for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 6).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

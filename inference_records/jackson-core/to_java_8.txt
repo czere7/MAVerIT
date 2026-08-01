@@ -1,0 +1,4 @@
+1. Implicit variable declaration in instanceof commands
+2. Inline Objects.checkFromIndexSize
+3. Custom Math.multiplyHigh
+4. Switch target java version from 17 to 8 in configs

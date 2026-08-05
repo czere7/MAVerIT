@@ -1,0 +1,16 @@
+{
+  "model": "Mistral-Small-3.2-24B-Instruct",
+  "provider": "lite_llm",
+  "working_directory": "C:\\git\\innovate\\VibeTestRepos\\commons-cli",
+  "max_repair_attempts": "5",
+  "total_runtime_ms": 360120.0,
+  "run_id": "9dfe7ddd-8fee-4d47-808f-afbabea81d89",
+  "thresholds": {
+    "coverage": "1.0",
+    "mutation": "1.0"
+  },
+  "max_iterations": {
+    "coverage": "3",
+    "mutation": "3"
+  }
+}

@@ -17,9 +17,20 @@ def compiler_node(agent_state: "AgentState") -> dict:
     class_under_test = get_current_class_under_test(agent_state)
     source_file_path = Path(class_under_test.file_path)
     print(f"[compiler_node] Writing and compiling generated test for: {source_file_path}")
-    test_file_path = _write_test_class(project_dir, source_file_path, test_class)
-    print(f"[compiler_node] Test file written to: {test_file_path}")
-    maven_result = run_maven(str(project_dir))
+    try:
+        test_file_path = _write_test_class(project_dir, source_file_path, test_class)
+
+        print(f"[compiler_node] Test file written to: {test_file_path}")
+        maven_result = run_maven(str(project_dir))
+    except RuntimeError as e:
+        if "does not contain a class, interface, enum, or record declaration" in str(e):
+            maven_result = {
+                "ok": False,
+                "combined_result": f"Generated test code is invalid: {e}"
+            }
+            test_file_path = []
+        else:
+            raise
 
     compiler_feedback = _format_compiler_feedback(
         ok=maven_result["ok"],

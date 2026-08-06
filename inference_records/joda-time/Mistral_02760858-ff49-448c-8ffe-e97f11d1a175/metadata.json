@@ -1,0 +1,16 @@
+{
+  "model": "Mistral-Small-3.2-24B-Instruct",
+  "provider": "lite_llm",
+  "working_directory": "C:\\git\\innovate\\VibeTestRepos\\joda-time",
+  "max_repair_attempts": "5",
+  "total_runtime_ms": 845525.0,
+  "run_id": "02760858-ff49-448c-8ffe-e97f11d1a175",
+  "thresholds": {
+    "coverage": "1.0",
+    "mutation": "1.0"
+  },
+  "max_iterations": {
+    "coverage": "3",
+    "mutation": "3"
+  }
+}

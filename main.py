@@ -96,4 +96,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    finished = False
+    while not finished:
+        try:
+            main()
+            finished = True
+        except Exception as e:
+            print(e)

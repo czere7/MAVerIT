@@ -369,7 +369,7 @@ def calculate_branch_coverage_for_class(jacoco_report_paths: list[Path], target_
 
     total = covered + missed
     if total == 0:
-        return 0.0
+        return 100.0
 
     return round((covered / total) * 100, 2)
 

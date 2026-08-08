@@ -1,0 +1,2304 @@
+[file_retriever_node] Reading Java source files from: C:\git\innovate\VibeTestRepos\commons-cli2
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\AlreadySelectedException.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\AmbiguousOptionException.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\BasicParser.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Char.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLineParser.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Converter.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DeprecatedAttributes.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\GnuParser.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\MissingArgumentException.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\MissingOptionException.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionBuilder.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionGroup.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Options.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionValidator.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\package-info.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\ParseException.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Parser.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PatternOptionBuilder.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\TypeHandler.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\UnrecognizedOptionException.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Util.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\AbstractHelpFormatter.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\FilterHelpAppendable.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpAppendable.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpFormatter.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\OptionFormatter.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\package-info.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TableDefinition.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextStyle.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\Util.java
+All files extracted
+Extracted 36 files
+[file_retriever_node] Loaded 36 Java context files; 23 concrete classes will be tested.
+[dependency_resolver_node] Resolving Maven test dependencies under: C:\git\innovate\VibeTestRepos\commons-cli2
+[dependency_resolver_node] Updated dependency/plugin configuration in 1 pom.xml file(s).
+[initial_test_write_node] Generating initial test for 1/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\AlreadySelectedException.java
+Option
+OptionGroup
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\AlreadySelectedException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\AlreadySelectedExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.AlreadySelectedException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+Option
+OptionGroup
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\AlreadySelectedException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\AlreadySelectedExceptionTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\AlreadySelectedExceptionTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java:[60,32] unreported exception org.apache.commons.cli.AlreadySelectedException; must be caught or declared to be thrown
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Option
+OptionGroup
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\AlreadySelectedException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\AlreadySelectedExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.AlreadySelectedException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.AlreadySelectedException with tests org.apache.commons.cli.AlreadySelectedExceptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 2/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 2/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\AmbiguousOptionException.java
+Option
+Options
+UnrecognizedOptionException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\AmbiguousOptionException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\AmbiguousOptionExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.AmbiguousOptionException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.AmbiguousOptionException with tests org.apache.commons.cli.AmbiguousOptionExceptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 3/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 3/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\BasicParser.java
+DefaultParser
+Option
+Options
+Parser
+\BasicParser
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\BasicParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\BasicParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.BasicParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+DefaultParser
+Option
+Options
+Parser
+\BasicParser
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\BasicParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\BasicParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.BasicParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.BasicParser with tests org.apache.commons.cli.BasicParserTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 4/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 4/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+Converter
+Option
+OptionBuilder
+OptionGroup
+Options
+ParseException
+PatternOptionBuilder
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[23,19] cannot find symbol
+  symbol:   method addValueForProcessing(java.lang.String)
+  location: variable option of type org.apache.commons.cli.Option
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[108,19] cannot find symbol
+  symbol:   method addValueForProcessing(java.lang.String)
+  location: variable definition of type org.apache.commons.cli.Option
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[109,19] cannot find symbol
+  symbol:   method addValueForProcessing(java.lang.String)
+  location: variable definition of type org.apache.commons.cli.Option
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[110,19] cannot find symbol
+  symbol:   method addValueForProcessing(java.lang.String)
+  location: variable definition of type org.apache.commons.cli.Option
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[132,16] cannot find symbol
+  symbol:   method addValueForProcessing(java.lang.String)
+  location: variable numbers of type org.apache.commons.cli.Option
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[133,16] cannot find symbol
+  symbol:   method addValueForProcessing(java.lang.String)
+  location: variable numbers of type org.apache.commons.cli.Option
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[149,15] cannot find symbol
+  symbol:   method addValueForProcessing(java.lang.String)
+  location: variable number of type org.apache.commons.cli.Option
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[175,19] cannot find symbol
+  symbol:   method addValueForProcessing(java.lang.String)
+  location: variable deprecated of type org.apache.commons.cli.Option
+[INFO] 8 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Converter
+Option
+OptionBuilder
+OptionGroup
+Options
+ParseException
+PatternOptionBuilder
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.CommandLine in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 72.06% (previous 0.00%, delta 72.06%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+Converter
+Option
+OptionBuilder
+OptionGroup
+Options
+ParseException
+PatternOptionBuilder
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[298,27] incompatible types: java.lang.String cannot be converted to org.apache.commons.cli.Option
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Converter
+Option
+OptionBuilder
+OptionGroup
+Options
+ParseException
+PatternOptionBuilder
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.CommandLine in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 72.06% (previous 72.06%, delta 0.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.CommandLine with tests org.apache.commons.cli.CommandLineTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 72.09% (previous 0.00%, delta 72.09%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+Converter
+Option
+OptionBuilder
+OptionGroup
+Options
+ParseException
+PatternOptionBuilder
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.CommandLine with tests org.apache.commons.cli.CommandLineTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 87.60% (previous 72.09%, delta 15.51%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 2).
+Converter
+Option
+OptionBuilder
+OptionGroup
+Options
+ParseException
+PatternOptionBuilder
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.CommandLine with tests org.apache.commons.cli.CommandLineTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 93.02% (previous 87.60%, delta 5.42%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 3).
+Converter
+Option
+OptionBuilder
+OptionGroup
+Options
+ParseException
+PatternOptionBuilder
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/CommandLineTest.java:[507,26] unreported exception org.apache.commons.cli.AlreadySelectedException; must be caught or declared to be thrown
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Converter
+Option
+OptionBuilder
+OptionGroup
+Options
+ParseException
+PatternOptionBuilder
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\CommandLine.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\CommandLineTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.CommandLine with tests org.apache.commons.cli.CommandLineTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 86.05% (previous 93.02%, delta -6.97%).
+[class_advancer_node] Advancing to next class: index 5/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 5/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/DefaultParserTest.java:[197,40] cannot find symbol
+  symbol:   method getOption(java.lang.String)
+  location: variable commandLine of type org.apache.commons.cli.CommandLine
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/DefaultParserTest.java:[198,42] cannot find symbol
+  symbol:   method getOption(java.lang.String)
+  location: variable commandLine of type org.apache.commons.cli.CommandLine
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultParserTest.reportsAmbiguousPartialLongOption:210 expected:<[]al> but was:<[--]al>
+[INFO] 
+[ERROR] Tests run: 55, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[TIMEOUT]: timeout value of 60 seconds has been exceeded.
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.DefaultParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 62.25% (previous 0.00%, delta 62.25%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultParserTest.builderCanEnableQuoteStrippingForAttachedValue:395 expected:<[Alice]> but was:<["Alice"]>
+[ERROR] Errors: 
+[ERROR]   DefaultParserTest.acceptsNonNumericDashedTokenAsArgumentValueWhenItIsNotAnOption:379 » MissingArgument Missing argument for option: n
+[INFO] 
+[ERROR] Tests run: 72, Failures: 1, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.DefaultParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 75.00% (previous 62.25%, delta 12.75%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultParserTest.skipActionIgnoresUnknownOptionsButKeepsArguments:533 array lengths differed, expected.length=1 actual.length=2; arrays first differed at element [0]; expected:<[value]> but was:<[-unknown]>
+[INFO] 
+[ERROR] Tests run: 80, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultParserTest.usesBuilderWithExplicitQuoteStripping:613 expected:<Alice> but was:<null>
+[INFO] 
+[ERROR] Tests run: 80, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.DefaultParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 77.45% (previous 75.00%, delta 2.45%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 3).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/DefaultParserTest.java:[631,42] cannot find symbol
+  symbol:   method getOption(java.lang.String)
+  location: variable commandLine of type org.apache.commons.cli.CommandLine
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/DefaultParserTest.java:[632,40] cannot find symbol
+  symbol:   method getOption(java.lang.String)
+  location: variable commandLine of type org.apache.commons.cli.CommandLine
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.DefaultParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 71.57% (previous 77.45%, delta -5.88%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.DefaultParser with tests org.apache.commons.cli.DefaultParserTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 75.00% (previous 0.00%, delta 75.00%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/DefaultParserTest.java:[525,42] no suitable method found for getOptionValue(java.lang.String,int)
+    method org.apache.commons.cli.CommandLine.getOptionValue(char,java.lang.String) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to char)
+    method org.apache.commons.cli.CommandLine.getOptionValue(char,java.util.function.Supplier<java.lang.String>) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to char)
+    method org.apache.commons.cli.CommandLine.getOptionValue(org.apache.commons.cli.Option,java.lang.String) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.apache.commons.cli.Option)
+    method org.apache.commons.cli.CommandLine.getOptionValue(org.apache.commons.cli.Option,java.util.function.Supplier<java.lang.String>) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.apache.commons.cli.Option)
+    method org.apache.commons.cli.CommandLine.getOptionValue(org.apache.commons.cli.OptionGroup,java.lang.String) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.apache.commons.cli.OptionGroup)
+    method org.apache.commons.cli.CommandLine.getOptionValue(org.apache.commons.cli.OptionGroup,java.util.function.Supplier<java.lang.String>) is not applicable
+      (argument mismatch; java.lang.String cannot be converted to org.apache.commons.cli.OptionGroup)
+    method org.apache.commons.cli.CommandLine.getOptionValue(java.lang.String,java.lang.String) is not applicable
+      (argument mismatch; int cannot be converted to java.lang.String)
+    method org.apache.commons.cli.CommandLine.getOptionValue(java.lang.String,java.util.function.Supplier<java.lang.String>) is not applicable
+      (argument mismatch; int cannot be converted to java.util.function.Supplier<java.lang.String>)
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultParserTest.checksMissingArgumentBeforeHandlingFollowingOption:492 expected:<n[ame]> but was:<n[]>
+[INFO] 
+[ERROR] Tests run: 89, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.DefaultParser with tests org.apache.commons.cli.DefaultParserTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 87.50% (previous 75.00%, delta 12.50%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 2).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.DefaultParser with tests org.apache.commons.cli.DefaultParserTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 91.85% (previous 87.50%, delta 4.35%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 3).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultParserTest.checksMissingArgumentBeforeHandlingFollowingOption:203 expected:<n[ame]> but was:<n[]>
+[ERROR]   DefaultParserTest.doesNotTreatOneCharacterLongNameAsAttachedLongPrefix:479 Expected UnrecognizedOptionException
+[ERROR] Errors: 
+[ERROR]   DefaultParserTest.ordinarySingleArgumentShortOptionIsNotJavaProperty:373 » UnrecognizedOption Unrecognized option: -Dkey=value
+[INFO] 
+[ERROR] Tests run: 91, Failures: 2, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/DefaultParserTest.java:[289,40] reference to getOptionValue is ambiguous
+  both method getOptionValue(java.lang.String,java.lang.String) in org.apache.commons.cli.CommandLine and method getOptionValue(java.lang.String,java.util.function.Supplier<java.lang.String>) in org.apache.commons.cli.CommandLine match
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+AlreadySelectedException
+AmbiguousOptionException
+CommandLine
+CommandLineParser
+\DefaultParser
+MissingArgumentException
+MissingOptionException
+Option
+OptionGroup
+Options
+ParseException
+Parser
+UnrecognizedOptionException
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DefaultParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DefaultParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.DefaultParser with tests org.apache.commons.cli.DefaultParserTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 82.61% (previous 91.85%, delta -9.24%).
+[class_advancer_node] Advancing to next class: index 6/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 6/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DeprecatedAttributes.java
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\DeprecatedAttributes.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\DeprecatedAttributesTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.DeprecatedAttributes in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.DeprecatedAttributes with tests org.apache.commons.cli.DeprecatedAttributesTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 7/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 7/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\GnuParser.java
+DefaultParser
+Option
+Options
+Parser
+\BasicParser
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\GnuParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\GnuParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.GnuParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.GnuParser with tests org.apache.commons.cli.GnuParserTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 8/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 8/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testFindWrapPos:77 expected:<5> but was:<3>
+[ERROR]   HelpFormatterTest.testRenderWrappedTextWrapsAndIndentsContinuationLines:91 expected:<one two
+   three[] four> but was:<one two
+   three[
+  ] four>
+[ERROR] Errors: 
+[ERROR]   HelpFormatterTest.testBuilderConfiguresWriterSinceAndDeprecatedFormatting:191 » NegativeArraySize
+[INFO] 
+[ERROR] Tests run: 109, Failures: 2, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.HelpFormatter in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 66.91% (previous 0.00%, delta 66.91%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testFindWrapPosHandlesTabCarriageReturnAndHardCut:342 expected:<4> but was:<3>
+[ERROR] Errors: 
+[ERROR]   HelpFormatterTest.testShowSinceUsesDefaultMarkerForMissingSinceAndHandlesEmptyOptions:357 » NegativeArraySize
+[INFO] 
+[ERROR] Tests run: 116, Failures: 1, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.HelpFormatter in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 89.71% (previous 66.91%, delta 22.80%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/HelpFormatterTest.java:[404,49] unreported exception java.io.IOException; must be caught or declared to be thrown
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testWrappedTextHandlesZeroWidthAndTrailingWhitespace:328 expected:<[   ]> but was:<[]>
+[INFO] 
+[ERROR] Tests run: 121, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.HelpFormatter in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 91.18% (previous 89.71%, delta 1.47%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 3).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testEmptyOptionGroupProducesEmptyOptionalGroup:540
+[ERROR]   HelpFormatterTest.testFindWrapPosRecognizesOnlyWhitespaceWithinTheCurrentWidth:435 expected:<8> but was:<5>
+[ERROR]   HelpFormatterTest.testPrintUsageHandlesSyntaxWithoutArguments:529 expected:<usage: app[ ]
+> but was:<usage: app[]
+>
+[ERROR] Errors: 
+[ERROR]   HelpFormatterTest.testAppendOptionsShowsSincePlaceholderForNullSinceValue:496 » NegativeArraySize
+[INFO] 
+[ERROR] Tests run: 129, Failures: 3, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.HelpFormatter in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 88.97% (previous 91.18%, delta -2.21%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.HelpFormatter with tests org.apache.commons.cli.HelpFormatterTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 77.12% (previous 0.00%, delta 77.12%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testAppendOptionsUsesExactPaddingForUnequalOptionWidths:475 expected:<  -a      [       A
+  -long       ]   LONG> but was:<  -a      [A
+  -long]   LONG>
+[ERROR]   HelpFormatterTest.testAppendOptionsUsesLongSeparatorOnlyForLongOnlyArguments:501
+[ERROR]   HelpFormatterTest.testFindWrapPosHonorsNewlineAndTabAtWidthBoundary:534 expected:<5> but was:<6>
+[ERROR]   HelpFormatterTest.testWrappedTextResetsIndentWhenIndentReachesWidth:518 expected:<abc[
+d] efgh> but was:<abc[ d
+] efgh>
+[ERROR]   HelpFormatterTest.testWrappedTextRetainsWordsAtExactWrapBoundary:526 expected:<one[
+two thre]e> but was:<one[ two
+   thre
+   ]e>
+[ERROR]   HelpFormatterTest.testWrappedTextUsesWidthBoundaryWithoutDroppingCharacters:510 expected:<12345
+[6789]0> but was:<12345
+[ 6789
+ ]0>
+[ERROR] Errors: 
+[ERROR]   HelpFormatterTest.testShowSinceAlignsNullAndShortSinceValuesToSinceColumn:557 » NegativeArraySize
+[INFO] 
+[ERROR] Tests run: 137, Failures: 6, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testAppendOptionsUsesActualPaddingForUnequalOptionWidths:202 expected:<  -a     []A
+  -long   LONG> but was:<  -a     [ ]A
+  -long   LONG>
+[ERROR]   HelpFormatterTest.testWrappedTextUsesImplementationWidthBoundary:118 expected:<abc[
+] d
+ efgh> but was:<abc[] d
+ efgh>
+[INFO] 
+[ERROR] Tests run: 123, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testWrappedTextUsesImplementationWidthBoundary:112 expected:<one[
+  ] two
+   thre
+   e> but was:<one[] two
+   thre
+   e>
+[INFO] 
+[ERROR] Tests run: 120, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 3).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.HelpFormatter with tests org.apache.commons.cli.HelpFormatterTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 79.74% (previous 77.12%, delta 2.62%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 2).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testDefaultBuilderWriterIsUsable:590 expected:<usage: app
+[]> but was:<usage: app
+[
+]>
+[ERROR]   HelpFormatterTest.testFindWrapPosHonorsWhitespaceAndEndBoundaries:571 expected:<5> but was:<4>
+[ERROR]   HelpFormatterTest.testWrappedTextUsesFallbackPaddingWhenTabStopReachesWidth:549 expected:<abc
+ defg[h
+] i> but was:<abc
+ defg[
+ h] i>
+[ERROR] Errors: 
+[ERROR]   HelpFormatterTest.testSinceColumnUsesLongestSinceValueAndFallbackForMissingSince:531 » NegativeArraySize
+[INFO] 
+[ERROR] Tests run: 130, Failures: 3, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testFindWrapPosHonorsImplementationBoundaries:96 expected:<4> but was:<2>
+[ERROR]   HelpFormatterTest.testWrappedTextUsesFallbackPaddingAtWidthBoundary:132 expected:<abc
+ defg
+ h[
+] i> but was:<abc
+ defg
+ h[] i>
+[INFO] 
+[ERROR] Tests run: 122, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+Option
+OptionGroup
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpFormatter
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\HelpFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.HelpFormatter with tests org.apache.commons.cli.HelpFormatterTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 80.39% (previous 79.74%, delta 0.65%).
+[class_advancer_node] Advancing to next class: index 9/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 9/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\MissingArgumentException.java
+Option
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\MissingArgumentException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\MissingArgumentExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.MissingArgumentException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+Option
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\MissingArgumentException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\MissingArgumentExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.MissingArgumentException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.MissingArgumentException with tests org.apache.commons.cli.MissingArgumentExceptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 10/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 10/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\MissingOptionException.java
+Option
+OptionGroup
+Options
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\MissingOptionException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\MissingOptionExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.MissingOptionException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.MissingOptionException with tests org.apache.commons.cli.MissingOptionExceptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 11/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 11/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+CommandLine
+CommandLineParser
+\DefaultParser
+Converter
+DefaultParser
+DeprecatedAttributes
+OptionBuilder
+Options
+Parser
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/OptionTest.java:[264,67] unreported exception capture#1 of ?; must be caught or declared to be thrown
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/OptionTest.java:[270,69] unreported exception capture#2 of ?; must be caught or declared to be thrown
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CommandLine
+CommandLineParser
+\DefaultParser
+Converter
+DefaultParser
+DeprecatedAttributes
+OptionBuilder
+Options
+Parser
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   OptionTest.converterDefaultsToConverterForConfiguredTypeAndCanBeReplaced:264 expected: java.lang.Long<42> but was: java.lang.Integer<42>
+[INFO] 
+[ERROR] Tests run: 158, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+CommandLine
+CommandLineParser
+\DefaultParser
+Converter
+DefaultParser
+DeprecatedAttributes
+OptionBuilder
+Options
+Parser
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.Option in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 90.00% (previous 0.00%, delta 90.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+CommandLine
+CommandLineParser
+\DefaultParser
+Converter
+DefaultParser
+DeprecatedAttributes
+OptionBuilder
+Options
+Parser
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.Option in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 97.50% (previous 90.00%, delta 7.50%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+CommandLine
+CommandLineParser
+\DefaultParser
+Converter
+DefaultParser
+DeprecatedAttributes
+OptionBuilder
+Options
+Parser
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   OptionTest.uninitializedArgumentCountIsNotMultipleArguments:442
+[INFO] 
+[ERROR] Tests run: 170, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CommandLine
+CommandLineParser
+\DefaultParser
+Converter
+DefaultParser
+DeprecatedAttributes
+OptionBuilder
+Options
+Parser
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.Option in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 95.00% (previous 97.50%, delta -2.50%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.Option with tests org.apache.commons.cli.OptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 92.47% (previous 0.00%, delta 92.47%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+CommandLine
+CommandLineParser
+\DefaultParser
+Converter
+DefaultParser
+DeprecatedAttributes
+OptionBuilder
+Options
+Parser
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.Option with tests org.apache.commons.cli.OptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 97.85% (previous 92.47%, delta 5.38%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 2).
+CommandLine
+CommandLineParser
+\DefaultParser
+Converter
+DefaultParser
+DeprecatedAttributes
+OptionBuilder
+Options
+Parser
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Option.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.Option with tests org.apache.commons.cli.OptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 97.85%, delta 2.15%).
+[class_advancer_node] Advancing to next class: index 12/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 12/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionBuilder.java
+CommandLine
+Converter
+Option
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionBuilderTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.OptionBuilder in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 75.00% (previous 0.00%, delta 75.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+CommandLine
+Converter
+Option
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionBuilderTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.OptionBuilder in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 75.00%, delta 25.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.OptionBuilder with tests org.apache.commons.cli.OptionBuilderTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 70.97% (previous 0.00%, delta 70.97%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+CommandLine
+Converter
+Option
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionBuilderTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.OptionBuilder with tests org.apache.commons.cli.OptionBuilderTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 90.32% (previous 70.97%, delta 19.35%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 2).
+CommandLine
+Converter
+Option
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionBuilderTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.OptionBuilder with tests org.apache.commons.cli.OptionBuilderTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 96.77% (previous 90.32%, delta 6.45%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 3).
+CommandLine
+Converter
+Option
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionBuilderTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.OptionBuilder with tests org.apache.commons.cli.OptionBuilderTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 96.77% (previous 96.77%, delta 0.00%).
+[class_advancer_node] Advancing to next class: index 13/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 13/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionGroup.java
+AlreadySelectedException
+Option
+Options
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\OptionGroup.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionGroupTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.OptionGroup in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.OptionGroup with tests org.apache.commons.cli.OptionGroupTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 14/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 14/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Options.java
+CommandLine
+HelpFormatter
+Option
+OptionGroup
+HelpFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Options.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionsTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionsTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/OptionsTest.java:[177,16] method addRequiredOption in class org.apache.commons.cli.Options cannot be applied to given types;
+  required: java.lang.String,java.lang.String,boolean,java.lang.String
+  found: java.lang.String,boolean,java.lang.String
+  reason: actual and formal argument lists differ in length
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CommandLine
+HelpFormatter
+Option
+OptionGroup
+HelpFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Options.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionsTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.Options in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.Options with tests org.apache.commons.cli.OptionsTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 84.62% (previous 0.00%, delta 84.62%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+CommandLine
+HelpFormatter
+Option
+OptionGroup
+HelpFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Options.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionsTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.Options with tests org.apache.commons.cli.OptionsTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 97.44% (previous 84.62%, delta 12.82%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 2).
+CommandLine
+HelpFormatter
+Option
+OptionGroup
+HelpFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\Options.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\OptionsTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.Options with tests org.apache.commons.cli.OptionsTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 97.44% (previous 97.44%, delta 0.00%).
+[class_advancer_node] Advancing to next class: index 15/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 15/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\ParseException.java
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\ParseException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\ParseExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.ParseException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.ParseException with tests org.apache.commons.cli.ParseExceptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 16/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 16/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PatternOptionBuilder.java
+Converter
+Option
+OptionBuilder
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PatternOptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PatternOptionBuilderTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PatternOptionBuilderTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java:[80,58] unreported exception capture#1 of ?; must be caught or declared to be thrown
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java:[91,67] unreported exception capture#2 of ?; must be caught or declared to be thrown
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java:[92,71] unreported exception capture#3 of ?; must be caught or declared to be thrown
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java:[152,47] unreported exception capture#4 of ?; must be caught or declared to be thrown
+[INFO] 4 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+Converter
+Option
+OptionBuilder
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PatternOptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PatternOptionBuilderTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PatternOptionBuilderTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   PatternOptionBuilderTest.testParsePatternCreatesFlagOption:69 expected null, but was:<class java.lang.String>
+[INFO] 
+[ERROR] Tests run: 245, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+Converter
+Option
+OptionBuilder
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PatternOptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PatternOptionBuilderTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.PatternOptionBuilder in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.PatternOptionBuilder with tests org.apache.commons.cli.PatternOptionBuilderTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 96.77% (previous 0.00%, delta 96.77%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+Converter
+Option
+OptionBuilder
+Options
+TypeHandler
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PatternOptionBuilder.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PatternOptionBuilderTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.PatternOptionBuilder with tests org.apache.commons.cli.PatternOptionBuilderTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 96.77%, delta 3.23%).
+[class_advancer_node] Advancing to next class: index 17/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 17/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+AmbiguousOptionException
+DefaultParser
+Option
+Options
+ParseException
+Parser
+\BasicParser
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/PosixParserTest.java:[176,15] options has private access in org.apache.commons.cli.PosixParser
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+AmbiguousOptionException
+DefaultParser
+Option
+Options
+ParseException
+Parser
+\BasicParser
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   PosixParserTest.flattenPreservesUnknownBurstWhenNotStopping:63 array lengths differed, expected.length=1 actual.length=3; arrays first differed at element [0]; expected:<-a[bx]> but was:<-a[]>
+[ERROR]   PosixParserTest.flattenStopsAtUnknownBurstAndCopiesRemainingArguments:76 array lengths differed, expected.length=5 actual.length=6; arrays first differed at element [1]; expected:<-[-]> but was:<-[b]>
+[INFO] 
+[ERROR] Tests run: 258, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+AmbiguousOptionException
+DefaultParser
+Option
+Options
+ParseException
+Parser
+\BasicParser
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.PosixParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 78.85% (previous 0.00%, delta 78.85%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+AmbiguousOptionException
+DefaultParser
+Option
+Options
+ParseException
+Parser
+\BasicParser
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   PosixParserTest.flattenDoesNotAddSeparatorForBurstAfterOptionAcceptingArgument:207 arrays first differed at element [1]; expected:<[]y> but was:<[x]y>
+[INFO] 
+[ERROR] Tests run: 266, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+AmbiguousOptionException
+DefaultParser
+Option
+Options
+ParseException
+Parser
+\BasicParser
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.PosixParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 96.15% (previous 78.85%, delta 17.30%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+AmbiguousOptionException
+DefaultParser
+Option
+Options
+ParseException
+Parser
+\BasicParser
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.PosixParser in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 96.15% (previous 96.15%, delta 0.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.PosixParser with tests org.apache.commons.cli.PosixParserTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 93.02% (previous 0.00%, delta 93.02%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+AmbiguousOptionException
+DefaultParser
+Option
+Options
+ParseException
+Parser
+\BasicParser
+OptionFormatter
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\PosixParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\PosixParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.PosixParser with tests org.apache.commons.cli.PosixParserTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 93.02%, delta 6.98%).
+[class_advancer_node] Advancing to next class: index 18/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 18/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\TypeHandler.java
+Converter
+Option
+Options
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\TypeHandler.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\TypeHandlerTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.TypeHandler in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 0.00%, delta 100.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.TypeHandler with tests org.apache.commons.cli.TypeHandlerTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 88.89% (previous 0.00%, delta 88.89%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+Converter
+Option
+Options
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\TypeHandler.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\TypeHandlerTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.TypeHandler with tests org.apache.commons.cli.TypeHandlerTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 94.44% (previous 88.89%, delta 5.55%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 2).
+Converter
+Option
+Options
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\TypeHandler.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\TypeHandlerTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.TypeHandler with tests org.apache.commons.cli.TypeHandlerTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 94.44% (previous 94.44%, delta 0.00%).
+[class_advancer_node] Advancing to next class: index 19/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 19/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\UnrecognizedOptionException.java
+Option
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\UnrecognizedOptionException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\UnrecognizedOptionExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.UnrecognizedOptionException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+Option
+ParseException
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\UnrecognizedOptionException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\UnrecognizedOptionExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.UnrecognizedOptionException in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.UnrecognizedOptionException with tests org.apache.commons.cli.UnrecognizedOptionExceptionTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 20/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 20/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpFormatter.java
+HelpFormatter
+Option
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpAppendable
+\FilterHelpAppendable
+OptionFormatter
+TableDefinition
+TextHelpAppendable
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java:[88,56] cannot find symbol
+  symbol:   method getTableDefinition(java.util.List<org.apache.commons.cli.Option>)
+  location: class org.apache.commons.cli.help.HelpFormatter.Builder
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+HelpFormatter
+Option
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpAppendable
+\FilterHelpAppendable
+OptionFormatter
+TableDefinition
+TextHelpAppendable
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testGetTableDefinitionHandlesOptionsWithAndWithoutArguments:92 expected:<[-h,--help, --, Show help]> but was:<[-h, --help, --, Show help]>
+[ERROR]   HelpFormatterTest.testGetTableDefinitionIncludesSinceColumnByDefault:49 expected:<[-f,--file <FILE>, 1.2, The file to process]> but was:<[-f, --file <FILE>, 1.2, The file to process]>
+[ERROR]   HelpFormatterTest.testGetTableDefinitionOmitsSinceColumnWhenDisabled:70 expected:<[-v,--version, ]> but was:<[-v, --version, ]>
+[ERROR]   HelpFormatterTest.testPrintHelpWritesUsageHeaderOptionsAndFooter:114
+[INFO] 
+[ERROR] Tests run: 314, Failures: 4, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+HelpFormatter
+Option
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpAppendable
+\FilterHelpAppendable
+OptionFormatter
+TableDefinition
+TextHelpAppendable
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testPrintHelpWritesUsageHeaderOptionsAndFooter:115
+[INFO] 
+[ERROR] Tests run: 314, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 3).
+HelpFormatter
+Option
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpAppendable
+\FilterHelpAppendable
+OptionFormatter
+TableDefinition
+TextHelpAppendable
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testGetTableDefinitionOmitsSinceColumnWhenDisabled:72 expected:<[-v, --version, , ]> but was:<[-v, --version, ]>
+[ERROR]   HelpFormatterTest.testPrintHelpWritesUsageHeaderOptionsAndFooter:116
+[INFO] 
+[ERROR] Tests run: 314, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 4).
+HelpFormatter
+Option
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpAppendable
+\FilterHelpAppendable
+OptionFormatter
+TableDefinition
+TextHelpAppendable
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testPrintHelpWritesUsageHeaderOptionsAndFooter:116
+[INFO] 
+[ERROR] Tests run: 314, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 5).
+HelpFormatter
+Option
+Options
+AbstractHelpFormatter
+\AbstractHelpFormatter
+HelpAppendable
+\FilterHelpAppendable
+OptionFormatter
+TableDefinition
+TextHelpAppendable
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\HelpFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HelpFormatterTest.testPrintHelpWritesUsageHeaderOptionsAndFooter:116
+[INFO] 
+[ERROR] Tests run: 314, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[faulty_test_cleanup_node] Could not find Maven compiler error line numbers for selective cleanup.
+[faulty_test_cleanup_node] Repair attempts exhausted and no compilable snapshot exists. Deleted faulty test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\HelpFormatterTest.java
+[class_advancer_node] Advancing to next class: index 21/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 21/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\OptionFormatter.java
+DeprecatedAttributes
+Option
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\OptionFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   OptionFormatterTest.customBuilderValuesControlOptionAndArgumentFormatting:96 expected:<(/o=[path])> but was:<(/o=[{path}])>
+[ERROR]   OptionFormatterTest.defaultFormattingIncludesOptionNamesArgumentNameAndDescription:29 expected:<[-v [file]]> but was:<[-v [<file>]]>
+[ERROR]   OptionFormatterTest.formattingHandlesAnOptionWithOnlyALongName:46 expected:<[--help]> but was:<[[--help]]>
+[ERROR]   OptionFormatterTest.formattingUsesDefaultArgumentNameWhenOptionHasAnArgumentWithoutName:58 expected:<[-f [arg]]> but was:<[-f [<arg>]]>
+[ERROR]   OptionFormatterTest.nullCustomValuesUseBuilderDefaults:117 expected:<[]> but was:<[arg]>
+[ERROR]   OptionFormatterTest.requiredOptionIsNotWrappedInOptionalDelimiters:71 expected:<-f [arg]> but was:<-f [<arg>]>
+[INFO] 
+[ERROR] Tests run: 320, Failures: 6, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+DeprecatedAttributes
+Option
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\OptionFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   OptionFormatterTest.defaultFormattingIncludesOptionNamesArgumentNameAndDescription:29 expected:<[-v [[<file>]]]> but was:<[-v [<file>]]>
+[ERROR]   OptionFormatterTest.formattingUsesDefaultArgumentNameWhenOptionHasAnArgumentWithoutName:58 expected:<[-f [[<arg>]]]> but was:<[-f [<arg>]]>
+[ERROR]   OptionFormatterTest.requiredOptionIsNotWrappedInOptionalDelimiters:71 expected:<-f [[<arg>]]> but was:<-f [<arg>]>
+[INFO] 
+[ERROR] Tests run: 320, Failures: 3, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+DeprecatedAttributes
+Option
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\OptionFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.OptionFormatter in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 66.67% (previous 0.00%, delta 66.67%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+DeprecatedAttributes
+Option
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\OptionFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-cli2/src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java:[222,49] DEFAULT is not public in org.apache.commons.cli.DeprecatedAttributes; cannot be accessed from outside package
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+DeprecatedAttributes
+Option
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\OptionFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.OptionFormatter in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 96.67% (previous 66.67%, delta 30.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+DeprecatedAttributes
+Option
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\OptionFormatter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\OptionFormatterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.OptionFormatter in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 96.67%, delta 3.33%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.help.OptionFormatter with tests org.apache.commons.cli.help.OptionFormatterTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 22/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 22/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TextHelpAppendableTest.testAppendHeaderUsesLevelSpecificFillCharacters:121 expected:<...%%%%%%
+
+ Detail
+ [++++++]
+
+ Deep
+ ____
+
+> but was:<...%%%%%%
+
+ Detail
+ [______]
+
+ Deep
+ ____
+
+>
+[ERROR]   TextHelpAppendableTest.testAppendOrderedListUsesNumbersAndHandlesNullEntries:147 expected:< [1. first
+] 2.
+
+> but was:< [ 1. first
+ ] 2.
+
+>
+[ERROR]   TextHelpAppendableTest.testAppendParagraphWrapsContinuationLinesWithIndent:89 expected:<  alpha[
+    ] beta
+     gamma
+
+...> but was:<  alpha[] beta
+     gamma
+
+...>
+[ERROR]   TextHelpAppendableTest.testAppendUnorderedListUsesBullets:157 expected:< [* one
+] * two
+
+> but was:< [ * one
+ ] * two
+
+>
+[ERROR]   TextHelpAppendableTest.testMakeColumnQueueProducesWrappedEntries:197 expected:<[ one ,    two]> but was:<[ one  ,  two  ]>
+[ERROR]   TextHelpAppendableTest.testPrintWrappedWithExplicitStyle:183 expected:< one
+ [  ]two
+> but was:< one
+ []two
+>
+[INFO] 
+[ERROR] Tests run: 345, Failures: 6, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.TextHelpAppendable in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 66.67% (previous 0.00%, delta 66.67%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TextHelpAppendableTest.testAdjustTableFormatLeavesAlreadyWideColumnsUnchanged:339 expected:<2> but was:<4>
+[ERROR] Errors: 
+[ERROR]   TextHelpAppendableTest.testAppendTitleLimitsUnderlineToConfiguredWidth:127 » IllegalArgument Width must be greater than 0
+[INFO] 
+[ERROR] Tests run: 357, Failures: 1, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.TextHelpAppendable in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 88.46% (previous 66.67%, delta 21.79%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TextHelpAppendableTest.testAdjustTableFormatPreservesNonScalableColumnWhenResizingIsNeeded:397 expected:<4> but was:<20>
+[INFO] 
+[ERROR] Tests run: 361, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.TextHelpAppendable in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 92.31% (previous 88.46%, delta 3.85%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 3).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TextHelpAppendableTest.testAdjustTableFormatResizesScalableColumnsAndSkipsFixedColumns:446 expected:<2> but was:<1>
+[INFO] 
+[ERROR] Tests run: 362, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.TextHelpAppendable in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 100.00% (previous 92.31%, delta 7.69%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.help.TextHelpAppendable with tests org.apache.commons.cli.help.TextHelpAppendableTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 81.25% (previous 0.00%, delta 81.25%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TextHelpAppendableTest.testAdjustTableFormatResizesOnlyWhenCalculatedWidthExceedsPageWidth:475 expected:<14> but was:<13>
+[ERROR]   TextHelpAppendableTest.testIndexOfWrapUsesTheLastWhitespaceBeforeTheLimit:80 expected:<4> but was:<5>
+[ERROR]   TextHelpAppendableTest.testMakeColumnQueueUsesReducedWidthForContinuationLines:293 expected:<[ 1234567,     89  ]> but was:<[ 1234567 ,     89   ]>
+[ERROR]   TextHelpAppendableTest.testWriteColumnQueuesUsesExactColumnPaddingAndStopsAfterLongestQueue:618 expected:< AX
+ B     []
+> but was:< AX
+ B     [ ]
+>
+[INFO] 
+[ERROR] Tests run: 370, Failures: 4, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+FilterHelpAppendable
+\TextHelpAppendable
+HelpAppendable
+\FilterHelpAppendable
+TableDefinition
+TextStyle
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextHelpAppendable.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextHelpAppendableTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.help.TextHelpAppendable with tests org.apache.commons.cli.help.TextHelpAppendableTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 78.12% (previous 81.25%, delta -3.13%).
+[class_advancer_node] Advancing to next class: index 23/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.
+[initial_test_write_node] Generating initial test for 23/23: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextStyle.java
+HelpAppendable
+\FilterHelpAppendable
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextStyle.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextStyleTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextStyleTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TextStyleTest.testPadRightWithFixedMaximumWidth:138 expected:<      []abc> but was:<      [ ]abc>
+[INFO] 
+[ERROR] Tests run: 369, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+HelpAppendable
+\FilterHelpAppendable
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextStyle.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextStyleTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.TextStyle in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 95.00% (previous 0.00%, delta 95.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+HelpAppendable
+\FilterHelpAppendable
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextStyle.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextStyleTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextStyleTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   TextStyleTest.testPadWithNullAlignmentUsesRightAlignedFallback:213 » NullPointer
+[INFO] 
+[ERROR] Tests run: 372, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+HelpAppendable
+\FilterHelpAppendable
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextStyle.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextStyleTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.cli.help.TextStyle in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[coverage_validator_node] Branch coverage: 95.00% (previous 95.00%, delta 0.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.help.TextStyle with tests org.apache.commons.cli.help.TextStyleTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 96.30% (previous 0.00%, delta 96.30%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+HelpAppendable
+\FilterHelpAppendable
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-cli2\src\main\java\org\apache\commons\cli\help\TextStyle.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-cli2\src\test\java\org\apache\commons\cli\help\TextStyleTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.cli.help.TextStyle with tests org.apache.commons.cli.help.TextStyleTest in module: C:\git\innovate\VibeTestRepos\commons-cli2
+[mutation_validator_node] Mutation score: 96.30% (previous 96.30%, delta 0.00%).
+[class_advancer_node] Advancing to next class: index 24/23, run_id: 259c8315-826d-44aa-89f8-c64aab784351.

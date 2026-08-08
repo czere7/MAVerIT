@@ -1,0 +1,16 @@
+{
+  "model": "gpt-5.6-luna",
+  "provider": "openai",
+  "working_directory": "C:\\git\\innovate\\VibeTestRepos\\commons-cli2",
+  "max_repair_attempts": "5",
+  "total_runtime_ms": 252327.0,
+  "run_id": "259c8315-826d-44aa-89f8-c64aab784351",
+  "thresholds": {
+    "coverage": "1.0",
+    "mutation": "1.0"
+  },
+  "max_iterations": {
+    "coverage": "3",
+    "mutation": "3"
+  }
+}

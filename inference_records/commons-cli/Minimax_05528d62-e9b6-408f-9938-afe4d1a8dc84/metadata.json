@@ -1,0 +1,16 @@
+{
+  "model": "minimax-m2.5",
+  "provider": "lite_llm",
+  "working_directory": "C:\\git\\innovate\\VibeTestRepos\\commons-cli",
+  "max_repair_attempts": "5",
+  "total_runtime_ms": 1511408.0,
+  "run_id": "05528d62-e9b6-408f-9938-afe4d1a8dc84",
+  "thresholds": {
+    "coverage": "1.0",
+    "mutation": "1.0"
+  },
+  "max_iterations": {
+    "coverage": "3",
+    "mutation": "3"
+  }
+}

@@ -1,0 +1,525 @@
+[file_retriever_node] Reading Java source files from: C:\git\innovate\VibeTestRepos\commons-csv
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\Constants.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVException.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVRecord.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\DuplicateHeaderMode.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\ExtendedBufferedReader.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\Lexer.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\package-info.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\QuoteMode.java
+Extracted file: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\Token.java
+All files extracted
+Extracted 12 files
+[file_retriever_node] Loaded 12 Java context files; 5 concrete classes will be tested.
+[dependency_resolver_node] Resolving Maven test dependencies under: C:\git\innovate\VibeTestRepos\commons-csv
+[dependency_resolver_node] Updated dependency/plugin configuration in 1 pom.xml file(s).
+[initial_test_write_node] Generating initial test for 1/5: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVException.java
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVException in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVException in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 0.00% (previous 0.00%, delta 0.00%).
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVException with tests org.apache.commons.csv.CSVExceptionTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] PIT run failed; stored Maven output for diagnostics.
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVException.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVExceptionTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVException with tests org.apache.commons.csv.CSVExceptionTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] PIT run failed; stored Maven output for diagnostics.
+[class_advancer_node] Advancing to next class: index 2/5, run_id: 6439e11f-4256-47f6-b9b5-4a9e7d2724da.
+[initial_test_write_node] Generating initial test for 2/5: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVFormatTest.testTrailingDelimiterAndRecordSeparator:142 expected:<a,b[]> but was:<a,b[,]>
+[INFO] 
+[ERROR] Tests run: 39, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVFormat in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 53.81% (previous 0.00%, delta 53.81%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVFormatTest.java:[369,42] non-static method trim(java.lang.String) cannot be referenced from a static context
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVFormat in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 66.58% (previous 53.81%, delta 12.77%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVFormatTest.testMinimalQuoteModeWithCommentMarkerAndSpecialCharacters:418 expected:<"a["]"b"> but was:<"a[\]"b">
+[ERROR]   CSVFormatTest.testMinimalQuoteModeWithMultiCharacterDelimiter:394 expected:<["|a"]> but was:<[|a]>
+[ERROR]   CSVFormatTest.testReaderPrintingWithQuotesAndEscapes:431 expected:<"a""b\[]c"> but was:<"a""b\[\]c">
+[INFO] 
+[ERROR] Tests run: 54, Failures: 3, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVFormat in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 71.99% (previous 66.58%, delta 5.41%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 3).
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVFormat in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 79.61% (previous 71.99%, delta 7.62%).
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVFormat with tests org.apache.commons.csv.CSVFormatTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] Mutation score: 4.35% (previous 0.00%, delta 4.35%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVFormatTest.testPrinting:182 expected:<a,b[]> but was:<a,b[,]>
+[ERROR]   CSVFormatTest.testSerializationRestoresUsableFormat:733 expected:<[]"a\\b"> but was:<[name
+]"a\\b">
+[INFO] 
+[ERROR] Tests run: 54, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVException
+CSVParser
+CSVPrinter
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVFormat.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVFormatTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVFormat with tests org.apache.commons.csv.CSVFormatTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] Mutation score: 1.43% (previous 4.35%, delta -2.92%).
+[class_advancer_node] Advancing to next class: index 3/5, run_id: 6439e11f-4256-47f6-b9b5-4a9e7d2724da.
+[initial_test_write_node] Generating initial test for 3/5: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+
+Relevant Maven output:
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[40,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[54,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[75,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[95,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[105,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[121,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[141,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[153,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[169,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[ERROR] /C:/git/innovate/VibeTestRepos/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java:[268,43] cannot find symbol
+  symbol:   method create()
+  location: class org.apache.commons.csv.CSVFormat
+[INFO] 10 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVParserTest.testNullStringDistinguishesQuotedAndUnquotedValues:132 expected null, but was:<>
+[INFO] 
+[ERROR] Tests run: 53, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 2).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVParserTest.testExplicitHeaderAndSkippedHeaderRecord:87 expected:<2> but was:<1>
+[ERROR]   CSVParserTest.testNullStringDistinguishesQuotedAndUnquotedValues:130 expected:<> but was:<null>
+[INFO] 
+[ERROR] Tests run: 53, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 3).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVParser in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 64.13% (previous 0.00%, delta 64.13%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVParser in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 90.22% (previous 64.13%, delta 26.09%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVParserTest.testZeroMaxRowsDoesNotReadRecords:519
+[ERROR] Errors: 
+[ERROR]   CSVParserTest.testMalformedQuotedInputRaisesCsvException »  Unexpected exception, expected<org.apache.commons.csv.CSVException> but was<java.io.UncheckedIOException>
+[INFO] 
+[ERROR] Tests run: 73, Failures: 1, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVParser in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 92.39% (previous 90.22%, delta 2.17%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 3).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVParser in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 93.48% (previous 92.39%, delta 1.09%).
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVParser with tests org.apache.commons.csv.CSVParserTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] Mutation score: 95.29% (previous 0.00%, delta 95.29%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVParser with tests org.apache.commons.csv.CSVParserTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] Mutation score: 96.47% (previous 95.29%, delta 1.18%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 2).
+CSVException
+CSVFormat
+CSVRecord
+DuplicateHeaderMode
+QuoteMode
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVParser.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVParserTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVParser with tests org.apache.commons.csv.CSVParserTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] Mutation score: 96.47% (previous 96.47%, delta 0.00%).
+[class_advancer_node] Advancing to next class: index 4/5, run_id: 6439e11f-4256-47f6-b9b5-4a9e7d2724da.
+[initial_test_write_node] Generating initial test for 4/5: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+CSVFormat
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVPrinterTest.testHeaderAndHeaderCommentsArePrintedDuringConstruction:150 expected:<[# generated
+# file
+]name,age
+> but was:<[]name,age
+>
+[INFO] 
+[ERROR] Tests run: 104, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVFormat
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVPrinter in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 56.86% (previous 0.00%, delta 56.86%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+CSVFormat
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVPrinter in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 90.20% (previous 56.86%, delta 33.34%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 2).
+CSVFormat
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVPrinterTest.testPrintCommentEndingWithCarriageReturn:273 expected:<# ending
+[]> but was:<# ending
+[# 
+]>
+[INFO] 
+[ERROR] Tests run: 118, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVFormat
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVPrinter in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 98.04% (previous 90.20%, delta 7.84%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 3).
+CSVFormat
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVPrinter in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 100.00% (previous 98.04%, delta 1.96%).
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVPrinter with tests org.apache.commons.csv.CSVPrinterTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] Mutation score: 87.34% (previous 0.00%, delta 87.34%).
+[mutation_test_writer_node] Adding mutation-focused tests (iteration 1).
+CSVFormat
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVPrinterTest.testHeaderAndHeaderCommentsArePrintedDuringConstruction:172 expected:<[# generated
+# file
+]name,age
+> but was:<[]name,age
+>
+[INFO] 
+[ERROR] Tests run: 127, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVFormat
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVPrinter.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVPrinterTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVPrinter with tests org.apache.commons.csv.CSVPrinterTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] Mutation score: 87.34% (previous 87.34%, delta 0.00%).
+[class_advancer_node] Advancing to next class: index 5/5, run_id: 6439e11f-4256-47f6-b9b5-4a9e7d2724da.
+[initial_test_write_node] Generating initial test for 5/5: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVRecord.java
+CSVFormat
+CSVParser
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVRecord.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVRecordTest.java
+[compiler_node] Maven test run failed. Routing will attempt repair if attempts remain.
+Compiler node result: Maven test compilation failed.
+Generated test file: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVRecordTest.java
+
+Relevant Maven output:
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CSVRecordTest.testCommentAndPositionsFromParser:249 expected:<[ ]comment> but was:<[]comment>
+[ERROR]   CSVRecordTest.testDuplicateHeaderUsesLastOccurrence:234
+[INFO] 
+[ERROR] Tests run: 130, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[test_repair_node] Repairing test after compile failure (attempt 1).
+CSVFormat
+CSVParser
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVRecord.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVRecordTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVRecord in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 91.67% (previous 0.00%, delta 91.67%).
+[coverage_test_writer_node] Adding coverage-focused tests (iteration 1).
+CSVFormat
+CSVParser
+[compiler_node] Writing and compiling generated test for: C:\git\innovate\VibeTestRepos\commons-csv\src\main\java\org\apache\commons\csv\CSVRecord.java
+[compiler_node] Test file written to: C:\git\innovate\VibeTestRepos\commons-csv\src\test\java\org\apache\commons\csv\CSVRecordTest.java
+[compiler_node] Maven test run passed. Stored this test as last known compilable version.
+[coverage_validator_node] Running JaCoCo for org.apache.commons.csv.CSVRecord in module: C:\git\innovate\VibeTestRepos\commons-csv
+[coverage_validator_node] Branch coverage: 100.00% (previous 91.67%, delta 8.33%).
+[mutation_validator_node] Running PIT for class org.apache.commons.csv.CSVRecord with tests org.apache.commons.csv.CSVRecordTest in module: C:\git\innovate\VibeTestRepos\commons-csv
+[mutation_validator_node] Mutation score: 100.00% (previous 0.00%, delta 100.00%).
+[class_advancer_node] Advancing to next class: index 6/5, run_id: 6439e11f-4256-47f6-b9b5-4a9e7d2724da.

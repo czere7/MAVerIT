@@ -34,6 +34,7 @@ def faulty_test_cleanup_node(agent_state: "AgentState") -> dict:
     trimmed_test_class = _trim_failing_test_methods(agent_state, test_file_path)
     if trimmed_test_class is not None:
         maven_result = run_maven(str(get_working_directory()))
+        print("[faulty_test_cleanup_node] Successfully trimmed test class.")
         if maven_result["ok"]:
             return {
                 "test_class": trimmed_test_class,
